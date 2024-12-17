@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "project_name": "Crud App",
+    "project_image": ["/images/CrudApp.png"],
+    "live_link": "https://jcrudapp.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/crud-app",
+    "project_info": " Tech:- React JS, React-Redux, React-Router, Bootstrap and React Icons.",
+    "tech_stack": [
+      "React JS",
+      "React-Redux",
+      "React-Router",
+      "Bootstrap",
+      "React Icons"
+    ]
+  },
+  {
+    "id": 2,
+    "project_name": "Movies Hub",
+    "project_image": ["/images/MoviesHub.png"],
+    "live_link": "https://jmovieshub.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/movie-search-app",
+    "project_info": "Movie Searching App.Tech:- React JS, Bootstrap , React Icons, omdbapi Api and Axios.",
+    "tech_stack": [
+      "React JS",
+      "Bootstrap",
+      "React Icons",
+      "omdbapi Api",
+      "Axios"
+    ]
+  },
+  {
+    "id": 3,
+    "project_name": "Tic Tac Toe",
+    "project_image": ["/images/TicTacToe.png"],
+    "live_link": "https://jabedalimollah.github.io/tic_tac_toe/",
+    "github_link": "https://github.com/jabedalimollah/tic_tac_toe",
+    "project_info": "Tech:- HTML , CSS and Javascript.",
+    "tech_stack": ["HTML", "CSS", "Javascript"]
+  },
+  {
+    "id": 4,
+    "project_name": "Contact Book",
+    "project_image": ["/images/ContactBook.png"],
+    "live_link": "https://contact-book-rose.vercel.app/",
+    "github_link": "https://github.com/jabedalimollah/Contact-book",
+    "project_info": "Tech:- Next js, Css, React icons and Bootstrap.",
+    "tech_stack": ["Next js", "CSS", "React icons", "Bootstrap"]
+  },
+  {
+    "id": 5,
+    "project_name": "E-Store",
+    "project_image": ["/images/estore.png"],
+    "live_link": "https://estore-website.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/estore",
+    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
+    "tech_stack": [
+      "React JS",
+      "Redux",
+      "React-Router-dom",
+      "Javascript",
+      "Bootstrap",
+      "React Icons",
+      "CSS3"
+    ]
+  },
+  {
+    "id": 6,
+    "project_name": "students-website",
+    "project_image": ["/images/students-website.png"],
+    "live_link": "https://students-website-omega.vercel.app/",
+    "github_link": "https://github.com/jabedalimollah/students-website",
+    "project_info": "Tech:- Next JS, TailwindCSS, React-icons.",
+    "tech_stack": ["Next JS", "TailwindCSS", "React-icons"]
+  },
+  {
+    "id": 7,
+    "project_name": "Notebook",
+    "project_image": ["/images/notebook.png"],
+    "live_link": "https://notebook7.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/notebook",
+    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
+    "tech_stack": [
+      "React JS",
+      "Redux",
+      "React-Router-dom",
+      "Javascript",
+      "TailwindCSS",
+      "React Icons",
+      "CSS3"
+    ]
+  },
+  {
+    "id": 8,
+    "project_name": "Chatit",
+    "project_image": ["/images/chatit.png"],
+    "live_link": "https://chatit7.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/chatit",
+    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
+    "tech_stack": [
+      "React JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Socket io",
+      "Redux",
+      "React-Router-dom",
+      "Javascript",
+      "TailwindCSS",
+      "React Icons",
+      "CSS3"
+    ]
+  },
+  {
+    "id": 9,
+    "project_name": "Aliet",
+    "project_image": ["/images/aliet.png"],
+    "live_link": "https://youtu.be/pdyayBR9mLI?si=tQbXg8tOTe7wEY9u",
+    "github_link": "https://github.com/jabedalimollah/aliet",
+    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
+    "tech_stack": [
+      "React JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Socket io",
+      "Redux",
+      "React-Router-dom",
+      "Javascript",
+      "TailwindCSS",
+      "React Icons",
+      "CSS3"
+    ]
+  }
+]
