@@ -3,7 +3,9 @@ import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { MdWork } from "react-icons/md";
 import { useSelector } from "react-redux";
+
 // interface ProjectData {
 //   id: number;
 //   project_name: string;
@@ -36,7 +38,10 @@ const project: React.FC<ProjectProps> = ({ data }) => {
       </div>
       <div className="w-full">
         <Link href={`/projects/${data?.project_name}`} className="inline-block">
-          <h2 className="font-bold flex text-xl text-purple-600 my-2 hover:underline">
+          <h2 className="font-bold flex items-center gap-x-1 text-xl text-purple-600 my-2 hover:underline">
+            {/* <MdWork className={`text-purple-400`} /> */}
+            {/* 💫 */}
+            <span className="loading loading-ring"></span>
             {data?.project_name}
           </h2>
         </Link>

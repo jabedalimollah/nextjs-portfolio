@@ -18,20 +18,32 @@ const Header: React.FC = () => {
       </Link>
       <ul className={`flex gap-x-3 items-center text-white px-6`}>
         <li>
-          <Link href={"/"}>Home</Link>
+          <Link href={"/"} className={`hover:font-semibold`}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link href={"/about"}>About</Link>
+          <Link href={"/about"} className={`hover:font-semibold`}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href={"/projects"}>Projects</Link>
+          <Link href={"/projects"} className={`hover:font-semibold`}>
+            Projects
+          </Link>
         </li>
         <li>
-          <Link href={"/contact"}>Contact</Link>
+          <Link href={"/contact"} className={`hover:font-semibold`}>
+            Contact
+          </Link>
         </li>
         <li className={``}>
-          <button className={`flex `} onClick={() => dispatch(setDarkMood())}>
-            {isDarkmode ? <FiSun /> : <RiMoonClearLine />}
+          <button className={`flex`} onClick={() => dispatch(setDarkMood())}>
+            {isDarkmode ? (
+              <FiSun className=" hover:text-lg" />
+            ) : (
+              <RiMoonClearLine className=" hover:text-lg" />
+            )}
           </button>
         </li>
       </ul>
