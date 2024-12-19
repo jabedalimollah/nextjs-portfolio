@@ -2,11 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface themeState {
-  darkmood: boolean;
+  darkmode: boolean;
 }
 
 const initialState: themeState = {
-  darkmood: false,
+  darkmode: false,
 };
 
 export const themeSlice = createSlice({
@@ -17,7 +17,7 @@ export const themeSlice = createSlice({
     //   state.darkmood = action.payload;
     // },
     setDarkMood: (state) => {
-      state.darkmood = !state.darkmood;
+      state.darkmode = !state.darkmode;
     },
   },
 });

@@ -6,7 +6,7 @@ import { FiSun } from "react-icons/fi";
 import { RiMoonClearLine } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 const Header: React.FC = () => {
-  const isDarkmode = useSelector((state: any) => state.theme.darkmood);
+  const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   const dispatch = useDispatch();
   return (
     <header className="h-11 w-full flex justify-between items-center bg-purple-700 sticky z-50 top-0 left-0">

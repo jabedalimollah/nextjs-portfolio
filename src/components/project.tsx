@@ -1,4 +1,5 @@
 import { ProjectData } from "@/app/projects/page";
+import { url } from "inspector";
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
@@ -19,7 +20,7 @@ interface ProjectProps {
 }
 
 const project: React.FC<ProjectProps> = ({ data }) => {
-  const isDarkmode = useSelector((state: any) => state.theme.darkmood);
+  const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   return (
     <div
       // key={data?.id}
@@ -29,15 +30,18 @@ const project: React.FC<ProjectProps> = ({ data }) => {
           : "shadow-xl border-purple-200 hover:bg-slate-100 bg-white"
       } hover:shadow-none p-4  rounded-xl`}
     >
-      <div className={`w-[full]`}>
-        <img
+      <div
+        className={`w-[full] h-60 bg-cover bg-no-repeat`}
+        style={{ backgroundImage: `url(${data?.project_image[0]})` }}
+      >
+        {/* <img
           src={data?.project_image[0]}
           alt="aliet"
-          className={`w-full rounded-t-lg `}
-        />
+          className={`w-full h-full rounded-t-lg object-cover`}
+        /> */}
       </div>
       <div className="w-full">
-        <Link href={`/projects/${data?.project_name}`} className="inline-block">
+        <Link href={`/projects/${data?.id}`} className="inline-block">
           <h2 className="font-bold flex items-center gap-x-1 text-xl text-purple-600 my-2 hover:underline">
             {/* <MdWork className={`text-purple-400`} /> */}
             {/* 💫 */}
@@ -63,7 +67,7 @@ const project: React.FC<ProjectProps> = ({ data }) => {
           Code
         </a>
         <Link
-          href={`/projects/${data?.project_name}`}
+          href={`/projects/${data?.id}`}
           className={`text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
         >
           More Details

@@ -5,14 +5,20 @@
     "project_image": ["/images/CrudApp.png"],
     "live_link": "https://jcrudapp.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/crud-app",
+    "video_link": "",
     "project_info": " Tech:- React JS, React-Redux, React-Router, Bootstrap and React Icons.",
-    "tech_stack": [
-      "React JS",
-      "React-Redux",
-      "React-Router",
-      "Bootstrap",
-      "React Icons"
-    ]
+    "features": [],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "React-Redux",
+        "React-Router",
+        "Bootstrap",
+        "React Icons"
+      ],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 2,
@@ -20,14 +26,20 @@
     "project_image": ["/images/MoviesHub.png"],
     "live_link": "https://jmovieshub.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/movie-search-app",
+    "video_link": "",
     "project_info": "Movie Searching App.Tech:- React JS, Bootstrap , React Icons, omdbapi Api and Axios.",
-    "tech_stack": [
-      "React JS",
-      "Bootstrap",
-      "React Icons",
-      "omdbapi Api",
-      "Axios"
-    ]
+    "features": [],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Bootstrap",
+        "React Icons",
+        "omdbapi Api",
+        "Axios"
+      ],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 3,
@@ -35,8 +47,14 @@
     "project_image": ["/images/TicTacToe.png"],
     "live_link": "https://jabedalimollah.github.io/tic_tac_toe/",
     "github_link": "https://github.com/jabedalimollah/tic_tac_toe",
+    "video_link": "",
     "project_info": "Tech:- HTML , CSS and Javascript.",
-    "tech_stack": ["HTML", "CSS", "Javascript"]
+    "features": [],
+    "tech_stack": {
+      "frontend": ["HTML", "CSS", "Javascript"],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 4,
@@ -44,8 +62,14 @@
     "project_image": ["/images/ContactBook.png"],
     "live_link": "https://contact-book-rose.vercel.app/",
     "github_link": "https://github.com/jabedalimollah/Contact-book",
+    "video_link": "",
     "project_info": "Tech:- Next js, Css, React icons and Bootstrap.",
-    "tech_stack": ["Next js", "CSS", "React icons", "Bootstrap"]
+    "features": [],
+    "tech_stack": {
+      "frontend": ["Next js", "CSS", "React icons", "Bootstrap"],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 5,
@@ -53,16 +77,22 @@
     "project_image": ["/images/estore.png"],
     "live_link": "https://estore-website.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/estore",
+    "video_link": "",
     "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "tech_stack": [
-      "React JS",
-      "Redux",
-      "React-Router-dom",
-      "Javascript",
-      "Bootstrap",
-      "React Icons",
-      "CSS3"
-    ]
+    "features": [],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Redux",
+        "React-Router-dom",
+        "Javascript",
+        "Bootstrap",
+        "React Icons",
+        "CSS3"
+      ],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 6,
@@ -70,25 +100,52 @@
     "project_image": ["/images/students-website.png"],
     "live_link": "https://students-website-omega.vercel.app/",
     "github_link": "https://github.com/jabedalimollah/students-website",
+    "video_link": "",
     "project_info": "Tech:- Next JS, TailwindCSS, React-icons.",
-    "tech_stack": ["Next JS", "TailwindCSS", "React-icons"]
+    "features": [],
+    "tech_stack": {
+      "frontend": ["Next JS", "TailwindCSS", "React-icons"],
+      "backend": [],
+      "database": []
+    }
   },
   {
     "id": 7,
     "project_name": "Notebook",
-    "project_image": ["/images/notebook.png"],
+    "project_image": [
+      "/images/notebook/notebook1.png",
+      "/images/notebook/notebook2.png",
+      "/images/notebook/notebook3.png",
+      "/images/notebook/notebook4.png",
+      "/images/notebook/notebook5.png",
+      "/images/notebook/notebook6.png"
+    ],
     "live_link": "https://notebook7.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/notebook",
-    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "tech_stack": [
-      "React JS",
-      "Redux",
-      "React-Router-dom",
-      "Javascript",
-      "TailwindCSS",
-      "React Icons",
-      "CSS3"
-    ]
+    "video_link": "https://youtu.be/AZKxZ1CHnMg?si=6qnRm83q7sXj9D9x",
+    "project_info": "Notebook is a secure, full-featured note-taking platform built with the MERN stack. It offers robust features for managing, securing, and organizing your notes, making it an ideal tool for both personal and professional use.",
+    "features": [
+      "Secure User Authentication: Register and login with secure authentication to protect your notes",
+      "Note Management: Easily create, update, and delete notes",
+      "Export Options: Export your notes as PDF or TXT files for sharing or backup",
+      "Clipboard Copy: Copy notes directly to your clipboard with a single click",
+      "File Import: Import notes seamlessly from TXT files",
+      "Advanced Search & Sorting: Quickly find and organize notes with powerful search and sorting tools",
+      "Checklist Functionality: Create and manage tasks within your notes using checklists"
+    ],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Redux",
+        "React-Router-dom",
+        "Javascript",
+        "TailwindCSS",
+        "React Icons",
+        "CSS3"
+      ],
+      "backend": ["Node JS", "Express JS", "JSON Web Token"],
+      "database": ["MongoDB"]
+    }
   },
   {
     "id": 8,
@@ -96,20 +153,26 @@
     "project_image": ["/images/chatit.png"],
     "live_link": "https://chatit7.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/chatit",
+    "video_link": "",
     "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "tech_stack": [
-      "React JS",
-      "Node JS",
-      "Express JS",
-      "MongoDB",
-      "Socket io",
-      "Redux",
-      "React-Router-dom",
-      "Javascript",
-      "TailwindCSS",
-      "React Icons",
-      "CSS3"
-    ]
+    "features": [],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Node JS",
+        "Express JS",
+        "MongoDB",
+        "Socket io",
+        "Redux",
+        "React-Router-dom",
+        "Javascript",
+        "TailwindCSS",
+        "React Icons",
+        "CSS3"
+      ],
+      "backend": ["Node JS", "Express JS", "JSON Web Token", "Socket io"],
+      "database": ["MongoDB"]
+    }
   },
   {
     "id": 9,
@@ -117,19 +180,25 @@
     "project_image": ["/images/aliet.png"],
     "live_link": "https://youtu.be/pdyayBR9mLI?si=tQbXg8tOTe7wEY9u",
     "github_link": "https://github.com/jabedalimollah/aliet",
+    "video_link": "",
     "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "tech_stack": [
-      "React JS",
-      "Node JS",
-      "Express JS",
-      "MongoDB",
-      "Socket io",
-      "Redux",
-      "React-Router-dom",
-      "Javascript",
-      "TailwindCSS",
-      "React Icons",
-      "CSS3"
-    ]
+    "features": [],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Node JS",
+        "Express JS",
+        "MongoDB",
+        "Socket io",
+        "Redux",
+        "React-Router-dom",
+        "Javascript",
+        "TailwindCSS",
+        "React Icons",
+        "CSS3"
+      ],
+      "backend": ["Node JS", "Express JS", "JSON Web Token", "Socket io"],
+      "database": ["MongoDB"]
+    }
   }
 ]

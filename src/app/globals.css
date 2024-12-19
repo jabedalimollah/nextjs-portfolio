@@ -96,3 +96,15 @@ body {
     scrollbar-color: purple, #f1f1f1;
   }
 }
+
+.to-top-animation {
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+@keyframes gototop {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  0% {
+    transform: translateY(1rem);
+  }
+}

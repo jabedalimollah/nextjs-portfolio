@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import projectsData from "../database/projectDB.json";
-import Link from "next/link";
 import Project from "@/components/project";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
@@ -17,8 +16,10 @@ export interface ProjectData {
   project_image: string[];
   live_link: string;
   github_link: string;
+  video_link: string;
   project_info: string;
-  tech_stack: string[];
+  features: string[];
+  tech_stack: { frontend: string[]; backend: string[]; database: string[] };
 }
 
 const reverseProjectData: ProjectData[] = [...projectsData].reverse();
@@ -41,7 +42,7 @@ const Page: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [menuOption, setMenuOption] = useState<number>(1);
   const [grid, setGrid] = useState<number>(3);
-  const isDarkmode = useSelector((state: any) => state.theme.darkmood);
+  const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   // =============== Ref ==============
   const btnRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -124,6 +125,11 @@ const Page: React.FC = () => {
               isDarkmode ? "slide-line-dark" : "slide-line-light"
             }`}
           ></div>
+          <div
+            className={`slide-line2 ${
+              isDarkmode ? "slide-line-dark" : "slide-line-light"
+            }`}
+          ></div>
         </h1>
       </section>
       {/* ==================== Search, Grid and Sorting Sectiion =================- */}
@@ -175,7 +181,7 @@ const Page: React.FC = () => {
               <button
                 ref={btnRef}
                 onClick={() => setOpen(!open)}
-                className="h-full px-3 rounded-md flex items-center bg-purple-700 hover:bg-purple-800 text-white"
+                className="h-full px-3 rounded-md flex items-center bg-purple-700 hover:bg-purple-800 text-white shadow-md"
               >
                 <BsFillGridFill />
               </button>
