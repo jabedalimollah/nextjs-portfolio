@@ -108,3 +108,24 @@ body {
     transform: translateY(1rem);
   }
 }
+
+.background-gradient {
+  /* background: rgb(190, 115, 248);
+  background: linear-gradient(
+    54deg,
+    rgba(190, 115, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 73%
+  ); */
+  /* background: rgb(222, 179, 255);
+  background: linear-gradient(
+    54deg,
+    rgba(233, 204, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 73%
+  ); */
+  background: rgb(144, 0, 255);
+  background: linear-gradient(
+    76deg,
+    rgba(144, 0, 255, 1) 0%,
+    rgb(58, 58, 58) 73%
+  );
+}

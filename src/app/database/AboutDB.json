@@ -1,0 +1,11 @@
+{
+  "name": "Jabed Ali Mollah",
+  "degree": ["Web Developer", "MERN Stack Developer"],
+  "about_description": " Hi, I’m a Web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, JavaScript, Bootstrap, React JS, Tailwind CSS, Node JS, Express JS and MongoDB ",
+  "age": "08/10/2000",
+  "email": "jabedalimollah7@gmail.com",
+  "phone_number": "+91 XXX-XXX-XXXX",
+  "address": "Bankura, West Bengal, India",
+  "location": "https://maps.app.goo.gl/pinp1jcADa7jzqNk8",
+  "profile_pic": "../images/Jabed_Ali.jpg"
+}
