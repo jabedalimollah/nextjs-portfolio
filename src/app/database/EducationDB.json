@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "institution_pic": "../images/education/hat-ashuria-high-school.jpg",
+    "institute_degree": " Secondary",
+    "institute_name": "Hat-Ashuria High School | WBBSE",
+    "passing_year": "2016 | Completed",
+    "isCompleted": true
+  },
+  {
+    "id": 2,
+    "institution_pic": "../images/education/hat-ashuria-high-school.jpg",
+    "institute_degree": " Higher Secondary",
+    "institute_name": "Hat-Ashuria High School | WBCHSE",
+    "passing_year": "2018 | Completed",
+    "isCompleted": true
+  },
+  {
+    "id": 3,
+    "institution_pic": "../images/education/Abs academy of polytechnic.jpeg",
+    "institute_degree": " Diploma in Computer Science and Technology",
+    "institute_name": "ABS Academy of Polytechnic | WBSCT&VE&SD",
+    "passing_year": "2019-2022 | Completed",
+    "isCompleted": true
+  },
+  {
+    "id": 4,
+    "institution_pic": "../images/education/DIATM Collage.png",
+    "institute_degree": " BTech in Computer Science and Engineering",
+    "institute_name": "Durgapur Institute of Advanced Technology & Management  | MAKAUT",
+    "passing_year": "2023-2026 | Pursuing",
+    "isCompleted": false
+  }
+]

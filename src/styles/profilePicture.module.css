@@ -1,0 +1,53 @@
+.profile_pic_animation {
+  rotate: 0deg;
+
+  animation-name: rotateAnimation;
+  animation-duration: 8s;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+  /* 0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  } */
+}
+.profile_pic_animation1 {
+  rotate: 0deg;
+
+  animation-name: rotateAnimation1;
+  animation-duration: 6s;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateAnimation1 {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

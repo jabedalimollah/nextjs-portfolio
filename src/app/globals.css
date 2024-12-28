@@ -108,7 +108,113 @@ body {
     transform: translateY(1rem);
   }
 }
+.name-light {
+  background: linear-gradient(90deg, #000000d4, #7d00bb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+  animation-name: nameAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: all;
+}
+.name-dark {
+  background: linear-gradient(90deg, #bab9b9d4, #7d00bb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation-name: nameAnimation1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes nameAnimation1 {
+  0% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #bab9b9d4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(180deg, #bab9b9d4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(270deg, #bab9b9d4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(3600deg, #bab9b9d4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(0deg, #bab9b9d4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes nameAnimation {
+  0% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #2d2c2cd4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(180deg, #2d2c2cd4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(270deg, #2d2c2cd4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(3600deg, #2d2c2cd4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    font-weight: bold;
+    font-size: 3rem;
+    background: linear-gradient(0deg, #2d2c2cd4, #7d00bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .background-gradient {
   /* background: rgb(190, 115, 248);
   background: linear-gradient(
@@ -128,4 +234,29 @@ body {
     rgba(144, 0, 255, 1) 0%,
     rgb(58, 58, 58) 73%
   );
+}
+
+.hexagon {
+  /* height: 200px;   */
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  /* background: #3b8686; */
+}
+
+.octagon {
+  /* width: 200px; */
+  aspect-ratio: 1;
+  --o: calc(50% * tan(-22.5deg));
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+
+  /* background: #3b8686; */
 }

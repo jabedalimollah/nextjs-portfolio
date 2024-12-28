@@ -1,24 +1,33 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import aboutDB from "../database/AboutDB.json";
+import React from "react";
 
-export interface AboutDb {
-  name: string;
-  degree: string[];
-  about_description: string;
-  age: string;
-  email: string;
-  phone_number: string;
-  address: string;
-  location: string;
-  profile_pic: string;
-}
+import dynamic from "next/dynamic";
+import SkillsSection from "@/components/skillsSection";
+import EducationSection from "@/components/educationSection";
+import CertificationSection from "@/components/CertificationSection";
+import { useSelector } from "react-redux";
+const PersonalDetails = dynamic(() => import("@/components/personalDetails"), {
+  ssr: false,
+});
+
 const about = () => {
-  const [aboutData, setAboutData] = useState<AboutDb | null>(null);
-  useEffect(() => {
-    setAboutData(aboutDB);
-  }, []);
-  return <div>about {aboutData?.email}</div>;
+  const isDarkmode = useSelector((state: any) => state.theme.darkmode);
+  return (
+    <div
+      className={`w-full flex flex-col items-center ${
+        isDarkmode ? "bg-slate-800" : "bg-purple-50"
+      }`}
+    >
+      {/* ==================== Personal Details Section ================ */}
+      <PersonalDetails />
+      {/* ==================== Skill Section ================ */}
+      <SkillsSection />
+      {/* ==================== Education Section ================ */}
+      <EducationSection />
+      {/* ==================== Certification Section ================ */}
+      <CertificationSection />
+    </div>
+  );
 };
 
 export default about;

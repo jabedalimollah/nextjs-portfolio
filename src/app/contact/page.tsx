@@ -4,7 +4,7 @@ import { FcContacts } from "react-icons/fc";
 import { useSelector } from "react-redux";
 import aboutDB from "../database/AboutDB.json";
 import homeDB from "../database/HomeDB.json";
-import { AboutDb } from "../about/page";
+
 import { HomeDB } from "../page";
 import {
   FaFacebook,
@@ -18,8 +18,9 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import dynamic from "next/dynamic";
 import AnimatedPicture from "@/components/animatedPicture";
-import ContactAnimationLight from "../../../public/images/contact-light.json";
-import ContactAnimationDark from "../../../public/images/contact-dark.json";
+import ContactAnimationLight from "../../../public/images/animation_picture/contact-light.json";
+import ContactAnimationDark from "../../../public/images/animation_picture/contact-dark.json";
+import { AboutDb } from "@/components/personalDetails";
 const ContactForm = dynamic(() => import("@/components/contactForm"), {
   ssr: false,
 });

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Lottie from "lottie-react";
-import ContactLight from "../../public/images/contact-light.json";
+
 interface AnimationString {
   pathString: string | object;
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "course_certificate_image": "../images/certificate/image_0f72decb-e842-4619-972b-05169165f36520241227_211115.jpg",
+    "course_name": ""
+  },
+  {
+    "id": 2,
+    "course_certificate_image": "../images/certificate/image_6f8ee3f6-7be5-4412-a728-a4f199a6864e20241227_211125.jpg",
+    "course_name": ""
+  },
+  {
+    "id": 3,
+    "course_certificate_image": "../images/certificate/image_8024334f-17e1-48b0-9cf2-31cf1279f94320241227_211129.jpg",
+    "course_name": ""
+  },
+  {
+    "id": 4,
+    "course_certificate_image": "../images/certificate/image_b4994c1a-6134-4caa-b40b-41920bea0d6120241227_211133.jpg",
+    "course_name": ""
+  },
+  {
+    "id": 5,
+    "course_certificate_image": "../images/certificate/image_cdc4b616-2f43-4e8a-8a46-356fc454c58420241227_211137.jpg",
+    "course_name": ""
+  },
+  {
+    "id": 6,
+    "course_certificate_image": "../images/certificate/image_e8b14a5e-1297-4c6c-9d3e-da0f24ab509c20241227_211108.jpg",
+    "course_name": ""
+  }
+]
