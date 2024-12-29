@@ -21,6 +21,9 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      rotate: {
+        "360": "360deg",
+      },
     },
   },
   plugins: [require("daisyui"), require("tailwindcss-animate")],
