@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import GoToTop from "@/components/goToTop";
+// import GoToTop from "@/components/goToTop";
 import { StoreProvider } from "./redux/storeProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +32,7 @@ export default function RootLayout({
         <StoreProvider>
           <Header />
           {children}
-          <GoToTop />
+          {/* <GoToTop /> */}
         </StoreProvider>
       </body>
     </html>

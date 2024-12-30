@@ -245,30 +245,6 @@ export default function Home() {
               user experiences through continuous learning and dedication.
             </p>
           </div>
-          {/* <div className={`w-[30%]`}>
-            <span>
-              <FaCode />
-            </span>
-            <p>
-              With a strong foundation in computer science, I'm passionate about
-              web design and development, and interested in mobile app
-              development. As I grow as a developer, I hope to write clean,
-              readable code that can be used by others and leveraged to create
-              beautiful software.
-            </p>
-          </div>
-          <div className={`w-[30%]`}>
-            <span>
-              <PiMonitorBold />
-            </span>
-            <p>
-              Design isn't just what a product looks like and feels like on the
-              outside. Design encompasses the internal functionality of a
-              product as well as the overall user experience. I strive to design
-              interfaces and experiences that people can enjoy on all digital
-              mediums.
-            </p>
-          </div> */}
         </div>
       </section>
     </div>
