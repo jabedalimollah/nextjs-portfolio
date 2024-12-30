@@ -17,13 +17,13 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import dynamic from "next/dynamic";
-import AnimatedPicture from "@/components/animatedPicture";
+// import AnimatedPicture from "@/components/animatedPicture";
 import ContactAnimationLight from "../../../public/images/animation_picture/contact-light.json";
 import ContactAnimationDark from "../../../public/images/animation_picture/contact-dark.json";
 import { AboutDb } from "@/components/personalDetails";
-// const ContactForm = dynamic(() => import("@/components/contactForm"), {
-//   ssr: false,
-// });
+const ContactForm = dynamic(() => import("@/components/contactForm"), {
+  ssr: false,
+});
 
 let contactLight: string | object = ContactAnimationLight;
 let contactDark: string | object = ContactAnimationDark;
@@ -292,15 +292,15 @@ const page: React.FC = () => {
             } rounded-md`}
           >
             {" "}
-            {/* <ContactForm /> */}
+            <ContactForm />
             {/* -------------- Animated Picture ----------- */}
-            <div className={`w-[48%] h-full flex items-center justify-center`}>
+            {/* <div className={`w-[48%] h-full flex items-center justify-center`}>
               {isDarkmode ? (
                 <AnimatedPicture pathString={contactDark} />
               ) : (
                 <AnimatedPicture pathString={contactLight} />
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

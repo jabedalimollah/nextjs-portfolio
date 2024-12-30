@@ -26,7 +26,7 @@ const goToTop: React.FC = () => {
       {isVisible && (
         <div
           onClick={goToBtn}
-          className={`to-top-animation fixed bottom-12 right-10 bg-purple-600 hover:bg-purple-700 text-white shadow-xl p-2 rounded-full`}
+          className={`to-top-animation fixed bottom-12 right-10 bg-purple-600 hover:bg-purple-700 text-white shadow-xl p-2 rounded-full cursor-pointer`}
         >
           <FaArrowUp />
         </div>

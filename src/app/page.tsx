@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import homeDB from "./database/HomeDB.json";
 import Typewriter from "typewriter-effect";
-import Robot from "../../public/images/animation_picture/home.json";
-import AnimatedPicture from "@/components/animatedPicture";
+// import Robot from "../../public/images/animation_picture/home.json";
+// import AnimatedPicture from "@/components/animatedPicture";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaCode, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -160,7 +160,7 @@ export default function Home() {
           </ul>
         </div>
         <div className={`w-[50%] h-[100%] flex justify-center items-center`}>
-          <AnimatedPicture pathString={Robot} />
+          {/* <AnimatedPicture pathString={Robot} /> */}
         </div>
       </section>
 
