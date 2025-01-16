@@ -4,13 +4,27 @@ import skillsDB from "../app/database/SkillsDB.json";
 
 import { useSelector } from "react-redux";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-export interface SkillsDb {
-  id: number;
+import { FaCode } from "react-icons/fa";
+import { PiBracketsCurly, PiBracketsCurlyBold } from "react-icons/pi";
+import { RiToolsFill } from "react-icons/ri";
+// export interface SkillsDb {
+//   id: number;
+//   skill_image: string;
+//   skill_title: string;
+// }
+
+interface Skill {
   skill_image: string;
   skill_title: string;
 }
+
+interface SkillsDb {
+  frontend: Skill[];
+  backend: Skill[];
+  others: Skill[];
+}
 const SkillsSection = () => {
-  const [skillsData, setSkillsData] = useState<SkillsDb[] | null>(null);
+  const [skillsData, setSkillsData] = useState<SkillsDb | null>(null);
   const [showHide, setShowHide] = useState<boolean>(false);
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
 
@@ -46,30 +60,164 @@ const SkillsSection = () => {
       </div>
       {/* ---------------------- Skills Icons ----------------------- */}
       {!showHide && (
-        <div
-          className={`w-[80%] h-full grid grid-cols-6  place-items-center  gap-6 `}
-        >
-          {skillsData?.map((item, index) => (
-            <div
-              key={index}
-              className={`w-[80%] h-full py-4  rounded-xl ${
-                isDarkmode
-                  ? "bg-slate-700 hover:bg-slate-900 text-white"
-                  : "bg-white text-black border"
-              } shadow-lg hover:shadow-none  flex flex-col items-center justify-center`}
+        <div className={`w-[80%] flex flex-col gap-y-6`}>
+          <div
+            className={`w-full border  p-6 rounded-md ${
+              isDarkmode
+                ? "bg-slate-900 border-purple-800"
+                : "bg-white border-purple-400"
+            } `}
+          >
+            <h1
+              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
             >
-              <div className={`w-[40%] h-[70%] flex items-center`}>
-                <div className={`w-[100%]`}>
+              <FaCode className={``} />
+              Frontend
+            </h1>
+            <div className={`w-full flex flex-wrap gap-4`}>
+              {skillsData?.frontend.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`h-12 p-2 flex items-center justify-center gap-x-2 border ${
+                    isDarkmode
+                      ? " border-slate-500 bg-slate-800 hover:bg-slate-600 text-white"
+                      : " border-slate-300 bg-purple-50 hover:bg-slate-200 text-black"
+                  }   rounded-md cursor-pointer shrink-0 `}
+                >
                   <img
-                    src={`${item.skill_image}`}
-                    alt={item?.skill_title}
-                    className={`w-full`}
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`h-[100%]`}
                   />
+                  <span>{skill?.skill_title}</span>
                 </div>
-              </div>
-              <span>{item?.skill_title}</span>
+              ))}
             </div>
-          ))}
+          </div>
+          <div
+            className={`w-full border  p-6 rounded-md ${
+              isDarkmode
+                ? "bg-slate-900 border-purple-800"
+                : "bg-white border-purple-400"
+            } `}
+          >
+            <h1
+              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
+            >
+              <PiBracketsCurlyBold /> Backend
+            </h1>
+            <div className={`w-full flex flex-wrap gap-4`}>
+              {skillsData?.backend.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`h-12 p-2 flex items-center justify-center gap-x-2 border ${
+                    isDarkmode
+                      ? " border-slate-500 bg-slate-800 hover:bg-slate-600 text-white"
+                      : " border-slate-300 bg-purple-50 hover:bg-slate-200 text-black"
+                  }   rounded-md cursor-pointer shrink-0 `}
+                >
+                  <img
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`h-[100%]`}
+                  />
+                  <span>{skill?.skill_title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`w-full border  p-6 rounded-md ${
+              isDarkmode
+                ? "bg-slate-900 border-purple-800"
+                : "bg-white border-purple-400"
+            } `}
+          >
+            <h1
+              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
+            >
+              <RiToolsFill /> Others
+            </h1>
+            <div className={`w-full flex flex-wrap gap-4`}>
+              {skillsData?.others.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`h-12 p-2 flex items-center justify-center gap-x-2 border ${
+                    isDarkmode
+                      ? " border-slate-500 bg-slate-800 hover:bg-slate-600 text-white"
+                      : " border-slate-300 bg-purple-50 hover:bg-slate-200 text-black"
+                  }   rounded-md cursor-pointer shrink-0 `}
+                >
+                  <img
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`h-[100%]`}
+                  />
+                  <span>{skill?.skill_title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* <div
+            className={`w-full border border-purple-400 p-6 rounded-md bg-white shadow-inner shadow-slate-300`}
+          >
+            <h1 className={`text-xl text-purple-700 font-semibold my-2`}>Frontend</h1>
+            <div className={`w-full grid grid-cols-3 gap-6`}>
+              {skillsData?.frontend.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`w-[100%] p-2 flex flex-col items-center justify-center gap-x-2 border border-slate-200 bg-purple-50 hover:bg-slate-200 shadow-lg shadow-slate-300  rounded-md cursor-pointer shrink-0 `}
+                >
+                  <img
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`w-[50%]`}
+                  />
+                  <span>{skill?.skill_title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`w-full border border-purple-400 p-6 rounded-md bg-white shadow-inner shadow-slate-300`}
+          >
+            <h1 className={`text-xl font-semibold my-2`}>Backend</h1>
+            <div className={`w-full grid grid-cols-3 gap-6`}>
+              {skillsData?.backend.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`w-[100%] p-2 flex flex-col items-center justify-center gap-x-2 border border-slate-200 bg-purple-50 hover:bg-slate-200 shadow-lg shadow-slate-300  rounded-md cursor-pointer shrink-0 `}
+                >
+                  <img
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`w-[50%]`}
+                  />
+                  <span>{skill?.skill_title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`w-full border border-purple-400 p-6 rounded-md bg-white shadow-inner shadow-slate-300`}
+          >
+            <h1 className={`text-xl font-semibold my-2`}>Others</h1>
+            <div className={`w-full grid grid-cols-3 gap-6`}>
+              {skillsData?.others.map((skill, index) => (
+                <div
+                  key={index}
+                  className={`w-[100%] p-2 flex flex-col items-center justify-center gap-x-2 border border-slate-200 bg-purple-50 hover:bg-slate-200 shadow-lg shadow-slate-300  rounded-md cursor-pointer shrink-0 `}
+                >
+                  <img
+                    src={skill?.skill_image}
+                    alt={skill?.skill_title}
+                    className={`w-[50%]`}
+                  />
+                  <span>{skill?.skill_title}</span>
+                </div>
+              ))}
+            </div>
+          </div> */}
         </div>
       )}
     </section>

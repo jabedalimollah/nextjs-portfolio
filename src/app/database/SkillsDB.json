@@ -1,97 +1,106 @@
-[
-  {
-    "id": 1,
-    "skill_image": "../images/skills/html-5.png",
-    "skill_title": "HTML"
-  },
-  {
-    "id": 2,
-    "skill_image": "../images/skills/css3.png",
-    "skill_title": "CSS"
-  },
-  {
-    "id": 3,
-    "skill_image": "../images/skills/javascript.png",
-    "skill_title": "JavaScript"
-  },
-  {
-    "id": 4,
-    "skill_image": "../images/skills/bootstrap.png",
-    "skill_title": "Bootstrap"
-  },
-  {
-    "id": 5,
-    "skill_image": "../images/skills/ReactJs.png",
-    "skill_title": "React JS"
-  },
-  {
-    "id": 6,
-    "skill_image": "../images/skills/Git-Icon.png",
-    "skill_title": "Git"
-  },
-  {
-    "id": 7,
-    "skill_image": "../images/skills/github-logo.png",
-    "skill_title": "GitHub"
-  },
-  {
-    "id": 8,
-    "skill_image": "../images/skills/redux.png",
-    "skill_title": "Redux"
-  },
-  {
-    "id": 9,
-    "skill_image": "../images/skills/Axios.png",
-    "skill_title": "Axios"
-  },
-  {
-    "id": 10,
-    "skill_image": "../images/skills/jquery.png",
-    "skill_title": "Jquery"
-  },
-  {
-    "id": 11,
-    "skill_image": "../images/skills/nextjs.svg",
-    "skill_title": "Next JS"
-  },
-  {
-    "id": 12,
-    "skill_image": "../images/skills/nodejs1.png",
-    "skill_title": "Node JS"
-  },
-  {
-    "id": 13,
-    "skill_image": "../images/skills/expressjs.png",
-    "skill_title": "Express JS"
-  },
-  {
-    "id": 14,
-    "skill_image": "../images/skills/mongodb.png",
-    "skill_title": "MongoDB"
-  },
-  {
-    "id": 15,
-    "skill_image": "../images/skills/tailwindcss.png",
-    "skill_title": "Tailwind CSS"
-  },
-  {
-    "id": 16,
-    "skill_image": "../images/skills/netlify.png",
-    "skill_title": "Netlify"
-  },
-  {
-    "id": 17,
-    "skill_image": "../images/skills/vercel.png",
-    "skill_title": "Vercel"
-  },
-  {
-    "id": 18,
-    "skill_image": "../images/skills/typescript.png",
-    "skill_title": "Typescript"
-  },
-  {
-    "id": 19,
-    "skill_image": "../images/skills/socket.png",
-    "skill_title": "Socket"
-  }
-]
+{
+  "frontend": [
+    {
+      "skill_image": "../images/skills/html-5.png",
+      "skill_title": "HTML"
+    },
+    {
+      "skill_image": "../images/skills/css3.png",
+      "skill_title": "CSS"
+    },
+    {
+      "skill_image": "../images/skills/javascript.png",
+      "skill_title": "JavaScript"
+    },
+    {
+      "skill_image": "../images/skills/bootstrap.png",
+      "skill_title": "Bootstrap"
+    },
+
+    {
+      "skill_image": "../images/skills/jquery.png",
+      "skill_title": "Jquery"
+    },
+    {
+      "skill_image": "../images/skills/ReactJs.png",
+      "skill_title": "React JS"
+    },
+    {
+      "skill_image": "../images/skills/tailwindcss.png",
+      "skill_title": "Tailwind CSS"
+    },
+    {
+      "skill_image": "../images/skills/redux.png",
+      "skill_title": "Redux"
+    },
+    {
+      "skill_image": "../images/skills/nextjs-icon.svg",
+      "skill_title": "Next JS"
+    },
+    {
+      "skill_image": "../images/skills/typescript.png",
+      "skill_title": "Typescript"
+    },
+    {
+      "skill_image": "../images/skills/Axios.png",
+      "skill_title": "Axios"
+    },
+    {
+      "skill_image": "../images/skills/vite.svg",
+      "skill_title": "Vite"
+    },
+    {
+      "skill_image": "../images/skills/material-ui.png",
+      "skill_title": "Material UI"
+    }
+  ],
+  "backend": [
+    {
+      "skill_image": "../images/skills/nodejs1.png",
+      "skill_title": "Node JS"
+    },
+    {
+      "skill_image": "../images/skills/expressjs.png",
+      "skill_title": "Express JS"
+    },
+    {
+      "skill_image": "../images/skills/mongodb.png",
+      "skill_title": "MongoDB"
+    },
+    {
+      "skill_image": "../images/skills/jwt.svg",
+      "skill_title": "JSON Web Token"
+    },
+    {
+      "skill_image": "../images/skills/socket.png",
+      "skill_title": "Socket"
+    }
+  ],
+  "others": [
+    {
+      "skill_image": "../images/skills/Git-Icon.png",
+      "skill_title": "Git"
+    },
+    {
+      "skill_image": "../images/skills/github-logo.png",
+      "skill_title": "GitHub"
+    },
+
+    {
+      "skill_image": "../images/skills/netlify.png",
+      "skill_title": "Netlify"
+    },
+    {
+      "skill_image": "../images/skills/vercel.png",
+      "skill_title": "Vercel"
+    },
+    {
+      "skill_image": "../images/skills/postman.png",
+      "skill_title": "Postman"
+    },
+    {
+      "skill_image": "../images/skills/vs-code.png",
+      "skill_title": "VS Code"
+    }
+  ]
+}
