@@ -2,7 +2,7 @@
   rotate: 0deg;
 
   animation-name: rotateAnimation;
-  animation-duration: 8s;
+  animation-duration: 20s;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -36,7 +36,7 @@
   rotate: 0deg;
 
   animation-name: rotateAnimation1;
-  animation-duration: 6s;
+  animation-duration: 18s;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
   animation-direction: normal;
