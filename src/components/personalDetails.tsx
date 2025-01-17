@@ -1,14 +1,32 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
-import { FaCalendarAlt } from "react-icons/fa";
+// import Typewriter from "typewriter-effect";
+import { FaCalculator, FaCalendarAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { RiPhoneFill, RiUserFill } from "react-icons/ri";
-import { IoHome } from "react-icons/io5";
+import { LiaBirthdayCakeSolid } from "react-icons/lia";
+import { IoArrowBackOutline, IoHome } from "react-icons/io5";
 import aboutDB from "../app/database/AboutDB.json";
 import ProfilePicture from "./profilePicture";
+// import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { useSelector } from "react-redux";
+import dynamic from "next/dynamic";
+const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
+const Calendar = dynamic(() => import("react-calendar"), { ssr: false });
+const AgeCalculator = dynamic(() => import("./ageCalculator"), {
+  ssr: false,
+});
 export interface AboutDb {
   name: string;
   job_role: string[];
@@ -24,7 +42,30 @@ let profile_pic: string | object = aboutDB?.profile_pic;
 const PersonalDetails = () => {
   const [aboutData, setAboutData] = useState<AboutDb | null>(null);
   const [jobRole, setJobRole] = useState<string[] | undefined>(undefined);
+  const [isCalendar, setIsCalendar] = useState(true);
+
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
+
+  const currentDate = new Date();
+  const birthDate = new Date(2000, 9, 8); // year month day 2000 10-1 08
+
+  let ageYears = currentDate.getFullYear() - birthDate.getFullYear();
+  let ageMonths = currentDate.getMonth() - birthDate.getMonth();
+  let ageDays = currentDate.getDate() - birthDate.getDate();
+  if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+    ageYears--;
+    ageMonths += 12;
+  }
+  if (ageDays < 0) {
+    const prevMonthDate = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth() - 1,
+      0
+    );
+    ageDays += prevMonthDate.getDate();
+    ageMonths--;
+  }
+
   useEffect(() => {
     setAboutData(aboutDB);
 
@@ -70,7 +111,7 @@ const PersonalDetails = () => {
               <FaCalendarAlt /> Date of Birth :{" "}
             </span>
 
-            <input
+            {/* <input
               type="date"
               name="dob"
               id="dob"
@@ -78,7 +119,87 @@ const PersonalDetails = () => {
               className={`hover:underline ${
                 isDarkmode ? "hover:text-purple-400" : "hover:text-purple-800"
               } cursor-pointer bg-transparent `}
-            />
+            /> */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <button
+                  className={`flex gap-x-6 hover:underline ${
+                    isDarkmode
+                      ? "hover:text-purple-400"
+                      : "hover:text-purple-800"
+                  }`}
+                >
+                  08/10/2000
+                </button>
+              </DialogTrigger>
+              <DialogContent
+                className={`sm:max-w-[425px]s ${
+                  isDarkmode ? "bg-slate-800 text-white" : "bg-white text-black"
+                }`}
+              >
+                <DialogHeader>
+                  <DialogTitle className={`w-full flex gap-x-2 my-2 `}>
+                    {isCalendar ? (
+                      <>
+                        {" "}
+                        <LiaBirthdayCakeSolid /> 08/10/2000
+                      </>
+                    ) : (
+                      <button
+                        onClick={() => setIsCalendar(true)}
+                        className={`flex items-center gap-x-2 text-purple-500 hover:text-purple-700`}
+                      >
+                        <IoArrowBackOutline />
+                        Back
+                      </button>
+                    )}
+                  </DialogTitle>
+                  <DialogDescription
+                    // className={`${isDarkmode ? "text-white" : "text-black"}`}
+                    className={`w-full text-center font-serif text-lg ${
+                      isDarkmode ? "text-purple-200" : "text-purple-700"
+                    }`}
+                  >
+                    {/* This is my Birth Date */}
+                    {isCalendar ? (
+                      <>
+                        Age : {ageYears} years, {ageMonths} months, and{" "}
+                        {ageDays} days
+                      </>
+                    ) : (
+                      <p className={`flex items-center justify-center gap-x-2`}>
+                        <FaCalculator /> Age Calculator
+                      </p>
+                    )}
+                  </DialogDescription>
+                </DialogHeader>
+                {/* <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4"></div>
+            <div className="grid grid-cols-4 items-center gap-4"></div>
+          </div> */}
+
+                {isCalendar ? (
+                  <div
+                    className={`w-full flex flex-col items-center justify-center`}
+                  >
+                    <Calendar
+                      value={"08/10/2000"}
+                      className={`text-black rounded-md`}
+                    />
+                    <button
+                      onClick={() => setIsCalendar(false)}
+                      className={` mt-4 flex items-center gap-x-2 shadow shadow-slate-400 bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded-md `}
+                    >
+                      <FaCalculator />
+                      Calculate Your Age
+                    </button>
+                  </div>
+                ) : (
+                  <AgeCalculator />
+                )}
+                <DialogFooter></DialogFooter>
+              </DialogContent>
+            </Dialog>
           </div>
           <div className={`flex gap-x-1`}>
             <span

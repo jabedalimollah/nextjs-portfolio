@@ -59,7 +59,7 @@ const Header: React.FC = () => {
           <h1 className="text-white font-bold uppercase text-lg">Jabed</h1>
         </div>
       </Link>
-      {/* ===================== Clock Start ============================= */}
+      {/* ===================== Clock and Calendar Start ============================= */}
       <Dialog>
         <DialogTrigger asChild>
           <div className={`flex gap-x-6`}>
@@ -159,7 +159,7 @@ const Header: React.FC = () => {
           <DialogFooter></DialogFooter>
         </DialogContent>
       </Dialog>
-      {/* ==================== Clock End ======================= */}
+      {/* ==================== Clock and Calendar End ======================= */}
       <ul
         className={`w-[30%] flex justify-evenly items-center text-white px-6`}
       >
