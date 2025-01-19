@@ -355,16 +355,22 @@ const Page: React.FC = () => {
       </section>
 
       {/* ========================== Projects Section =================== */}
-      <section className="w-full flex justify-center py-6">
-        <div
-          className={`w-[80%] grid ${
-            grid === 3 ? "grid-cols-3" : "grid-cols-2"
-          } gap-10 mb-10`}
-        >
-          {projectData.map((data) => (
-            <Project key={data.id} data={data} />
-          ))}
-        </div>
+      <section className="w-full flex justify-center py-6 min-h-[70vh]">
+        {projectData.length ? (
+          <div
+            className={`w-[80%] grid ${
+              grid === 3 ? "grid-cols-3" : "grid-cols-2"
+            } gap-10 mb-10`}
+          >
+            {projectData.map((data) => (
+              <Project key={data.id} data={data} />
+            ))}
+          </div>
+        ) : (
+          <div className={`w-full flex justify-center text-2xl mt-6`}>
+            <p>😢 Projects Not Found</p>
+          </div>
+        )}
       </section>
     </div>
   );
