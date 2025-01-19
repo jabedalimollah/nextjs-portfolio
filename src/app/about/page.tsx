@@ -6,6 +6,7 @@ import SkillsSection from "@/components/skillsSection";
 import EducationSection from "@/components/educationSection";
 import CertificationSection from "@/components/CertificationSection";
 import { useSelector } from "react-redux";
+import CalendarAndWeatherApp from "@/components/calendarAndWeatherApp";
 const PersonalDetails = dynamic(() => import("@/components/personalDetails"), {
   ssr: false,
 });
@@ -20,6 +21,8 @@ const about = () => {
     >
       {/* ==================== Personal Details Section ================ */}
       <PersonalDetails />
+      {/* ==================== Calendar And Weather App Section ================ */}
+      <CalendarAndWeatherApp />
       {/* ==================== Skill Section ================ */}
       <SkillsSection />
       {/* ==================== Education Section ================ */}
