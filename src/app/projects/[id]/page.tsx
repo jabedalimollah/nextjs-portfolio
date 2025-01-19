@@ -119,9 +119,10 @@ const Page: React.FC = () => {
               </h3>
               <div className={`w-full flex flex-col gap-y-3`}>
                 {projectDetails?.tech_stack?.frontend?.length != 0 && (
-                  <div className={`w-full flex items-center gap-x-1`}>
-                    <h4 className={`text-lg font-semibold`}>Frontend :</h4>
-                    <ul className={`flex gap-x-1 `}>
+                  <div className={`w-full flex  items-centers gap-x-2`}>
+                    <h4 className={`text-lg font-semibold`}>Frontend </h4>
+                    <p className={`text-lg font-semibold`}> : </p>
+                    <ul className={`flex gap-1 flex-wrap`}>
                       {projectDetails?.tech_stack?.frontend.map(
                         (skill, index) => (
                           <li
@@ -136,9 +137,10 @@ const Page: React.FC = () => {
                   </div>
                 )}
                 {projectDetails?.tech_stack?.backend?.length != 0 && (
-                  <div className={`w-full flex items-center gap-x-1`}>
-                    <h4 className={`text-lg font-semibold`}>Backend :</h4>
-                    <ul className={`flex gap-x-1 `}>
+                  <div className={`w-full flex items-center gap-x-2`}>
+                    <h4 className={`text-lg font-semibold`}>Backend</h4>
+                    <p className={`text-lg font-semibold`}> : </p>
+                    <ul className={`flex gap-1 flex-wrap `}>
                       {projectDetails?.tech_stack?.backend.map(
                         (skill, index) => (
                           <li
@@ -153,8 +155,9 @@ const Page: React.FC = () => {
                   </div>
                 )}
                 {projectDetails?.tech_stack?.database?.length != 0 && (
-                  <div className={`w-full flex items-center gap-x-1`}>
-                    <h4 className={`text-lg font-semibold`}>Database :</h4>
+                  <div className={`w-full flex items-center gap-x-2`}>
+                    <h4 className={`text-lg font-semibold`}>Database </h4>
+                    <p className={`text-lg font-semibold`}> : </p>
                     <ul className={`flex gap-x-1 `}>
                       {projectDetails?.tech_stack?.database.map(
                         (skill, index) => (
@@ -246,7 +249,7 @@ const Page: React.FC = () => {
               {projectDetails?.project_image.map((image, index) => (
                 <div
                   key={index}
-                  className={`w-[100%] borders border-purple-800 rounded-lg ${
+                  className={`w-[100%] flex justify-center borders border-purple-800 rounded-lg ${
                     isDarkmode
                       ? "border-purple-200 bg-slate-700"
                       : "border-purple-800 bg-white"

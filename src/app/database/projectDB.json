@@ -2,12 +2,23 @@
   {
     "id": 1,
     "project_name": "Crud App",
-    "project_image": ["/images/CrudApp.png"],
+    "project_image": [
+      "/images/projects/crud_app/crud_app.png",
+      "/images/projects/crud_app/crud_app1.png",
+      "/images/projects/crud_app/crud_app2.png",
+      "/images/projects/crud_app/crud_app3.png",
+      "/images/projects/crud_app/crud_app4.png"
+    ],
     "live_link": "https://jcrudapp.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/crud-app",
     "video_link": "",
-    "project_info": " Tech:- React JS, React-Redux, React-Router, Bootstrap and React Icons.",
-    "features": [],
+    "project_info": "The CRUD (Create, Read, Update, Delete) app allows users to manage records with essential details such as Name, City, and Age. Users can add new entries, update existing information, delete unnecessary records, and view all saved data in an organized manner. This app provides an efficient way to manage and maintain simple user information.",
+    "features": [
+      "Add New Entries: Add new records with details like Name, City, and Age",
+      "Update Records: Edit or update existing records to keep information accurate",
+      "Delete Entries: Remove unnecessary or outdated records from the system",
+      "View Records: Display all added records in an organized manner for easy access"
+    ],
     "tech_stack": {
       "frontend": [
         "React JS",
@@ -23,12 +34,20 @@
   {
     "id": 2,
     "project_name": "Movies Hub",
-    "project_image": ["/images/MoviesHub.png"],
+    "project_image": [
+      "/images/projects/movies_hub/movies_hub1.png",
+      "/images/projects/movies_hub/movies_hub2.png",
+      "/images/projects/movies_hub/movies_hub3.png"
+    ],
     "live_link": "https://jmovieshub.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/movie-search-app",
     "video_link": "",
-    "project_info": "Movie Searching App.Tech:- React JS, Bootstrap , React Icons, omdbapi Api and Axios.",
-    "features": [],
+    "project_info": "Movies Hub is a movie searching app allows users to easily search for movies by title and view detailed information, including the movie's synopsis, cast and release date. With an intuitive and user-friendly interface, the app provides a seamless experience for discovering and exploring movies.",
+    "features": [
+      "Search Movies: Quickly find any movie by entering its title in the search bar",
+      "View Movie Details: Access detailed information about movies, including the title, synopsis, cast and release date",
+      "User-Friendly Interface: Intuitive design for seamless navigation and a better user experience"
+    ],
     "tech_stack": {
       "frontend": [
         "React JS",
@@ -44,14 +63,19 @@
   {
     "id": 3,
     "project_name": "Tic Tac Toe",
-    "project_image": ["/images/TicTacToe.png"],
+    "project_image": [
+      "/images/projects/tic_tac_toe/tic_tac_toe.png",
+      "/images/projects/tic_tac_toe/tic_tac_toe1.png",
+      "/images/projects/tic_tac_toe/tic_tac_toe2.png",
+      "/images/projects/tic_tac_toe/tic_tac_toe3.png"
+    ],
     "live_link": "https://jabedalimollah.github.io/tic_tac_toe/",
     "github_link": "https://github.com/jabedalimollah/tic_tac_toe",
     "video_link": "",
-    "project_info": "Tech:- HTML , CSS and Javascript.",
+    "project_info": "Tic Tac Toe is a classic two-player strategy game where players take turns marking Xs and Os on a 3x3 grid. The objective is to align three symbols horizontally, vertically, or diagonally. Simple yet engaging, it offers a fun and competitive experience for all ages.",
     "features": [],
     "tech_stack": {
-      "frontend": ["HTML", "CSS", "Javascript"],
+      "frontend": ["HTML5", "CSS3", "Javascript"],
       "backend": [],
       "database": []
     }
@@ -59,14 +83,25 @@
   {
     "id": 4,
     "project_name": "Contact Book",
-    "project_image": ["/images/ContactBook.png"],
+    "project_image": [
+      "/images/projects/contact_book/contact_book3.png",
+      "/images/projects/contact_book/contact_book2.png",
+      "/images/projects/contact_book/contact_book1.png",
+      "/images/projects/contact_book/contact_book4.png",
+      "/images/projects/contact_book/contact_book5.png"
+    ],
     "live_link": "https://contact-book-rose.vercel.app/",
     "github_link": "https://github.com/jabedalimollah/Contact-book",
     "video_link": "",
-    "project_info": "Tech:- Next js, Css, React icons and Bootstrap.",
-    "features": [],
+    "project_info": "Contact Book is a user-friendly application for managing contact information. Users can save contact details, including name, phone number, email, and profile photo. It allows seamless updating of contact details and deletion of unnecessary entries. With its intuitive design, Contact Book ensures efficient and organized contact management.",
+    "features": [
+      "Save Contacts: Add new contacts with name, phone number, email, and a profile photo",
+      "Update Details: Edit contact information, including updating photos or correcting details",
+      "Delete Contacts: Remove unwanted or outdated contacts with ease",
+      "User-Friendly Interface: Simple and intuitive design for easy management of contact information"
+    ],
     "tech_stack": {
-      "frontend": ["Next js", "CSS", "React icons", "Bootstrap"],
+      "frontend": ["Next js", "CSS3", "React icons"],
       "backend": [],
       "database": []
     }
@@ -74,12 +109,31 @@
   {
     "id": 5,
     "project_name": "E-Store",
-    "project_image": ["/images/estore.png"],
+    "project_image": [
+      "/images/projects/e-store/e-store1.png",
+      "/images/projects/e-store/e-store2.png",
+      "/images/projects/e-store/e-store3.png",
+      "/images/projects/e-store/e-store4.png",
+      "/images/projects/e-store/e-store5.png",
+      "/images/projects/e-store/e-store6.png",
+      "/images/projects/e-store/e-store7.png",
+      "/images/projects/e-store/e-store8.png",
+      "/images/projects/e-store/e-store9.png",
+      "/images/projects/e-store/e-store10.png",
+      "/images/projects/e-store/e-store11.png",
+      "/images/projects/e-store/e-store12.png",
+      "/images/projects/e-store/e-store13.png"
+    ],
     "live_link": "https://estore-website.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/estore",
     "video_link": "",
-    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "features": [],
+    "project_info": "ESTORE is a modern ecommerce platform where users can create accounts, browse product catalogs with detailed images, add items to their cart, and search products with sorting and filtering options. Built with React JS, Redux, and Bootstrap, it offers a seamless and intuitive shopping experience.",
+    "features": [
+      "Account Management: Create accounts with secure login and signup validations",
+      "Product Showcase: View detailed product descriptions with images",
+      "Cart Functionality: Add products to the cart for a seamless shopping experience",
+      "Search, Sort, and Filter: Easily search for products with sorting and filtering options"
+    ],
     "tech_stack": {
       "frontend": [
         "React JS",
@@ -88,7 +142,10 @@
         "Javascript",
         "Bootstrap",
         "React Icons",
-        "CSS3"
+        "CSS3",
+        "react-multi-carousel",
+        "react-fast-marquee",
+        "lottie-react"
       ],
       "backend": [],
       "database": []
@@ -96,15 +153,24 @@
   },
   {
     "id": 6,
-    "project_name": "students-website",
-    "project_image": ["/images/students-website.png"],
+    "project_name": "Students-website",
+    "project_image": [
+      "/images/projects/students-website/students-website5.png",
+      "/images/projects/students-website/students-website2.png",
+      "/images/projects/students-website/students-website3.png",
+      "/images/projects/students-website/students-website4.png",
+      "/images/projects/students-website/students-website1.png",
+      "/images/projects/students-website/students-website6.png",
+      "/images/projects/students-website/students-website7.png",
+      "/images/projects/students-website/students-website8.png"
+    ],
     "live_link": "https://students-website-omega.vercel.app/",
     "github_link": "https://github.com/jabedalimollah/students-website",
     "video_link": "",
-    "project_info": "Tech:- Next JS, TailwindCSS, React-icons.",
+    "project_info": "Students-website is a Static Website using Next JS and Tailwind CSS",
     "features": [],
     "tech_stack": {
-      "frontend": ["Next JS", "TailwindCSS", "React-icons"],
+      "frontend": ["Next JS", "Tailwind CSS", "React-icons", "Slick-carousel"],
       "backend": [],
       "database": []
     }
@@ -113,12 +179,12 @@
     "id": 7,
     "project_name": "Notebook",
     "project_image": [
-      "/images/notebook/notebook1.png",
-      "/images/notebook/notebook2.png",
-      "/images/notebook/notebook3.png",
-      "/images/notebook/notebook4.png",
-      "/images/notebook/notebook5.png",
-      "/images/notebook/notebook6.png"
+      "/images/projects/notebook/notebook1.png",
+      "/images/projects/notebook/notebook2.png",
+      "/images/projects/notebook/notebook3.png",
+      "/images/projects/notebook/notebook4.png",
+      "/images/projects/notebook/notebook5.png",
+      "/images/projects/notebook/notebook6.png"
     ],
     "live_link": "https://notebook7.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/notebook",
@@ -139,7 +205,7 @@
         "Redux",
         "React-Router-dom",
         "Javascript",
-        "TailwindCSS",
+        "Tailwind CSS",
         "React Icons",
         "CSS3"
       ],
@@ -150,54 +216,140 @@
   {
     "id": 8,
     "project_name": "Chatit",
-    "project_image": ["/images/chatit.png"],
+    "project_image": [
+      "/images/projects/chatit/chatit1.png",
+      "/images/projects/chatit/chatit2.png",
+      "/images/projects/chatit/chatit3.png",
+      "/images/projects/chatit/chatit4.png",
+      "/images/projects/chatit/chatit5.png",
+      "/images/projects/chatit/chatit6.png",
+      "/images/projects/chatit/chatit7.png",
+      "/images/projects/chatit/chatit8.png",
+      "/images/projects/chatit/chatit9.png",
+      "/images/projects/chatit/chatit10.png",
+      "/images/projects/chatit/chatit11.png",
+      "/images/projects/chatit/chatit12.png",
+      "/images/projects/chatit/chatit13.png",
+      "/images/projects/chatit/chatit14.png",
+      "/images/projects/chatit/chatit15.png",
+      "/images/projects/chatit/chatit16.png",
+      "/images/projects/chatit/chatit17.png",
+      "/images/projects/chatit/chatit18.png",
+      "/images/projects/chatit/chatit19.png",
+      "/images/projects/chatit/chatit20.png",
+      "/images/projects/chatit/chatit21.png",
+      "/images/projects/chatit/chatit22.png"
+    ],
     "live_link": "https://chatit7.netlify.app/",
     "github_link": "https://github.com/jabedalimollah/chatit",
-    "video_link": "",
-    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "features": [],
+    "video_link": "https://youtu.be/FyVyh1ebb8U?si=UrflRI-Tufg6asgA",
+    "project_info": "Chatit is a real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) that allows users to seamlessly connect with friends, family, colleagues, and AI. This app supports live messaging and user authentication creating an engaging and interactive chat experience.",
+    "features": [
+      "Real-time Chat: Instant messaging with friends, colleagues, and family",
+      "AI Integration: Chat with an AI for fun, assistance, or advice",
+      "User Authentication: Secure login and signup with user sessions",
+      "Customizable Profiles: Users can set up their profiles and update information",
+      "Responsive Design: Works smoothly on both mobile and desktop devices"
+    ],
     "tech_stack": {
       "frontend": [
         "React JS",
-        "Node JS",
-        "Express JS",
-        "MongoDB",
-        "Socket io",
         "Redux",
         "React-Router-dom",
         "Javascript",
-        "TailwindCSS",
+        "Tailwind CSS",
         "React Icons",
-        "CSS3"
+        "CSS3",
+        "Axios",
+        "Formik",
+        "Socket.io-client",
+        "React-toastify",
+        "Material UI",
+        "Emoji-mart",
+        "Vite"
       ],
-      "backend": ["Node JS", "Express JS", "JSON Web Token", "Socket io"],
+      "backend": [
+        "Node JS",
+        "Express JS",
+        "JSON Web Token",
+        "Socket io",
+        "Bcryptjs",
+        "Zod",
+        "Cloudinary",
+        "Multer"
+      ],
       "database": ["MongoDB"]
     }
   },
   {
     "id": 9,
     "project_name": "Aliet",
-    "project_image": ["/images/aliet.png"],
-    "live_link": "https://youtu.be/pdyayBR9mLI?si=tQbXg8tOTe7wEY9u",
+    "project_image": [
+      "/images/projects/aliet/aliet3.png",
+      "/images/projects/aliet/aliet1.png",
+      "/images/projects/aliet/aliet2.png",
+      "/images/projects/aliet/aliet4.png",
+      "/images/projects/aliet/aliet5.png",
+      "/images/projects/aliet/aliet6.png",
+      "/images/projects/aliet/aliet7.png",
+      "/images/projects/aliet/aliet8.png",
+      "/images/projects/aliet/aliet9.png",
+      "/images/projects/aliet/aliet10.png",
+      "/images/projects/aliet/aliet11.png",
+      "/images/projects/aliet/aliet12.png",
+      "/images/projects/aliet/aliet13.png",
+      "/images/projects/aliet/aliet14.png",
+      "/images/projects/aliet/aliet15.png",
+      "/images/projects/aliet/aliet16.png",
+      "/images/projects/aliet/aliet17.png",
+      "/images/projects/aliet/aliet18.png",
+      "/images/projects/aliet/aliet19.png",
+      "/images/projects/aliet/aliet20.png",
+      "/images/projects/aliet/aliet21.png"
+    ],
+    "live_link": "",
     "github_link": "https://github.com/jabedalimollah/aliet",
-    "video_link": "",
-    "project_info": "Tech:- React JS, Redux, React-Router-dom, Javascript, Bootstrap, React Icons and CSS3.",
-    "features": [],
+    "video_link": "https://youtu.be/pdyayBR9mLI?si=tQbXg8tOTe7wEY9u",
+    "project_info": "ALIET is a feature-rich social media web application developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js). It enables users to connect with others, share content, and manage their profiles effortlessly.",
+    "features": [
+      "Account Creation: Seamlessly create new user accounts with basic information and secure credentials",
+      "Profile Updates: Edit personal details, upload or update profile photos, and manage preferences",
+      "Password Management: Change the account password anytime for enhanced security",
+      "Account Deletion: Permanently delete accounts with confirmation prompts",
+      "Secure Access: Ensure secure login and logout with encrypted data handling and session management",
+      "Create Posts: Share updates with text, images",
+      "Delete Posts: Remove posts effortlessly when no longer needed",
+      "Bookmarks & Downloads: Bookmark posts for easy reference or download them to your device",
+      "Post Reactions: Like posts and view the total number of likes",
+      "Comments: Add comments to engage in meaningful discussions",
+      "User Search: Find other users easily by their name or username",
+      "Profile Viewing: Access detailed profiles of users, including their posts and engagement history",
+      "Follow System: Stay updated on activities by following or unfollowing other users",
+      "Real-Time Chat: Send and receive instant messages with other users"
+    ],
     "tech_stack": {
       "frontend": [
         "React JS",
-        "Node JS",
-        "Express JS",
-        "MongoDB",
-        "Socket io",
         "Redux",
         "React-Router-dom",
         "Javascript",
-        "TailwindCSS",
+        "Tailwind CSS",
         "React Icons",
-        "CSS3"
+        "CSS3",
+        "Axios",
+        "React-toastify",
+        "Socket.io-client",
+        "Vite"
       ],
-      "backend": ["Node JS", "Express JS", "JSON Web Token", "Socket io"],
+      "backend": [
+        "Node JS",
+        "Express JS",
+        "JSON Web Token",
+        "Socket io",
+        "Bcryptjs",
+        "Cloudinary",
+        "Multer"
+      ],
       "database": ["MongoDB"]
     }
   }

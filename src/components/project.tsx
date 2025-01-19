@@ -24,14 +24,14 @@ const project: React.FC<ProjectProps> = ({ data }) => {
   return (
     <div
       // key={data?.id}
-      className={` border ${
+      className={` border overflow-hidden ${
         isDarkmode
           ? "shadow-lg border-purple-900 hover:bg-slate-950 bg-slate-900 shadow-slate-900"
           : "shadow-xl border-purple-200 hover:bg-slate-100 bg-white"
       } hover:shadow-none p-4  rounded-xl`}
     >
       <div
-        className={`w-[full] h-60 bg-cover bg-no-repeat`}
+        className={`w-[full] h-60 bg-cover bg-center transition-transform duration-500 transform hover:scale-105  bg-no-repeat`}
         style={{ backgroundImage: `url(${data?.project_image[0]})` }}
       >
         {/* <img
@@ -51,10 +51,10 @@ const project: React.FC<ProjectProps> = ({ data }) => {
         </Link>
         {/* <p className="h-full truncate"> */}
         <p className="w-full truncate ">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
           magnam fuga eum voluptates nobis, dolor assumenda vero at perferendis,
-          illum earum non!
-          {/* {data?.project_info} */}
+          illum earum non! */}
+          {data?.project_info}
         </p>
       </div>
       <div className="w-full flex justify-between mt-2">
