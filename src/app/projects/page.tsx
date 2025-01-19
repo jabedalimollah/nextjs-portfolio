@@ -29,7 +29,7 @@ const skils = [
   "React JS",
   "Next JS",
   "Javascript",
-  "HTML + CSS",
+  "HTML5 + CSS3",
   "Tailwind CSS",
   "Bootstrap",
 ];
@@ -42,6 +42,7 @@ const Page: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [menuOption, setMenuOption] = useState<number>(1);
   const [grid, setGrid] = useState<number>(3);
+  const [skill, setSkill] = useState<string>("");
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   // =============== Ref ==============
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -89,6 +90,47 @@ const Page: React.FC = () => {
     } else if (option === "old") {
       const oldProjects: ProjectData[] = [...projectsData];
       setProjectData(oldProjects);
+    }
+  };
+  // ====================== Filter Projects Skill Wise ==================
+  const handleSkillFilter = (skillName: string) => {
+    // console.log(skill);
+    if (skillName === skill) {
+      setSkill("");
+      setProjectData(reverseProjectData);
+    } else {
+      if (skillName === "MERN") {
+        const filterData = reverseProjectData.filter((project) =>
+          ["React JS", "MongoDB", "Node JS", "Express JS"].every((tech) =>
+            Object.values(project.tech_stack).some((stack) =>
+              stack.includes(tech)
+            )
+          )
+        );
+        // console.log(filterData);
+        setProjectData(filterData);
+        setSkill(skillName);
+      } else if (skillName === "HTML5 + CSS3") {
+        const filterData = reverseProjectData.filter((project) =>
+          ["HTML5", "CSS3"].every((tech) =>
+            Object.values(project.tech_stack).some((stack) =>
+              stack.includes(tech)
+            )
+          )
+        );
+        // console.log(filterData);
+        setProjectData(filterData);
+        setSkill(skillName);
+      } else {
+        const filterData = reverseProjectData.filter((project) =>
+          Object.values(project.tech_stack).some((stack) =>
+            stack.includes(skillName)
+          )
+        );
+        // console.log(filterData);
+        setProjectData(filterData);
+        setSkill(skillName);
+      }
     }
   };
   // =============== useEffect ==============
@@ -291,10 +333,19 @@ const Page: React.FC = () => {
           {skils.map((item, index) => (
             <button
               key={index}
+              onClick={() => handleSkillFilter(item)}
               className={`border-2 ${
                 isDarkmode
-                  ? "border-purple-500 hover:bg-purple-500 hover:text-white text-purple-500 shadow-black"
-                  : "border-purple-700 bg-white hover:bg-purple-700 hover:text-white text-purple-700"
+                  ? `border-purple-500 hover:bg-purple-500 hover:text-white  ${
+                      skill == item
+                        ? "bg-purple-500 text-white"
+                        : "bg-transparent text-purple-700"
+                    } text-purple-500s shadow-black`
+                  : `border-purple-700 bg-whites ${
+                      skill == item
+                        ? "bg-purple-700 text-white"
+                        : "bg-white text-purple-700"
+                    } hover:bg-purple-700 hover:text-white `
               } px-2 py-1 rounded shadow-md`}
             >
               {item}
