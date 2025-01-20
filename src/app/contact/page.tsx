@@ -21,6 +21,7 @@ import dynamic from "next/dynamic";
 import ContactAnimationLight from "../../../public/images/animation_picture/contact-light.json";
 import ContactAnimationDark from "../../../public/images/animation_picture/contact-dark.json";
 import { AboutDb } from "@/components/personalDetails";
+import LocationAndWeatherApp from "@/components/locationAndWeatherApp";
 const ContactForm = dynamic(() => import("@/components/contactForm"), {
   ssr: false,
 });
@@ -261,6 +262,7 @@ const page: React.FC = () => {
           </a>
         </div>
       </section>
+      <LocationAndWeatherApp />
       {/* ---------------- Contact Form Section ---------------- */}
       <section className={`w-[80%] flex flex-col items-center`}>
         <div className={``}>
