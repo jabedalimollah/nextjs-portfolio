@@ -22,7 +22,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 type ValuePiece = Date | null;
 
-type Value = ValuePiece | [ValuePiece, ValuePiece];
+export type Value = ValuePiece | [ValuePiece, ValuePiece];
 const Header: React.FC = () => {
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   const [date, setDate] = useState<Value>(new Date());

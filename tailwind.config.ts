@@ -12,6 +12,10 @@ export default {
   },
   theme: {
     extend: {
+      dropShadow: {
+        custom: "0 5px 10px rgba(14, 14, 0, 0.4)", // Custom shadow
+        glow: "0 0 10px rgba(255, 255, 255, 0.8)", // Glow effect
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
