@@ -40,7 +40,7 @@ const CalendarAndAgeCalculator = () => {
   const handleDateChange = () => {
     setDate(date);
   };
-  console.log(new Date().getMonth());
+
   const currentDate = new Date();
   const handleCalculateAge = () => {
     const userBirthDate = new Date(
@@ -106,16 +106,16 @@ const CalendarAndAgeCalculator = () => {
             <IoCalendar />
             Today's Date
           </h2>
-          <div className={`w-[80%]`}>
+          <div className={`w-[70%]`}>
             <img
               src="/images/3d1.png"
               alt="image"
-              className={`w-full drop-shadow-custom  rounded-lg`}
+              className={`w-full drop-shadow-customs  rounded-lg`}
             />
           </div>
           <p className={`text-9xl font-serif font-semibold`}>{day}</p>
           <div className={`text-4xl flex gap-x-2`}>
-            <h2 className={` font-serif font-bold`}>{months[month]},</h2>
+            <h2 className={` font-serif font-bold`}>{months[month + 1]},</h2>
             <p className={` font-mono font-bold`}>{year}</p>
           </div>
         </div>

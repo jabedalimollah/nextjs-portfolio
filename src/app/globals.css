@@ -135,7 +135,7 @@ body {
   0% {
     font-weight: bold;
     font-size: 3rem;
-    background: linear-gradient(90deg, #bab9b9d4, #7d00bb);
+    background: linear-gradient(90deg, #ffffffd4, #7d00bb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -143,7 +143,7 @@ body {
   25% {
     font-weight: bold;
     font-size: 3rem;
-    background: linear-gradient(180deg, #bab9b9d4, #7d00bb);
+    background: linear-gradient(180deg, #ffffffd4, #7d00bb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,7 +151,7 @@ body {
   50% {
     font-weight: bold;
     font-size: 3rem;
-    background: linear-gradient(270deg, #bab9b9d4, #7d00bb);
+    background: linear-gradient(270deg, #ffffffd4, #7d00bb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -159,7 +159,7 @@ body {
   75% {
     font-weight: bold;
     font-size: 3rem;
-    background: linear-gradient(3600deg, #bab9b9d4, #7d00bb);
+    background: linear-gradient(3600deg, #ffffffd4, #7d00bb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -167,7 +167,7 @@ body {
   100% {
     font-weight: bold;
     font-size: 3rem;
-    background: linear-gradient(0deg, #bab9b9d4, #7d00bb);
+    background: linear-gradient(0deg, #ffffffd4, #7d00bb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
