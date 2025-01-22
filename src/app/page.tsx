@@ -29,9 +29,15 @@ export interface HomeDB {
 export default function Home() {
   const [homeData, setHomeData] = useState<HomeDB | null>(null);
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     setHomeData(homeDB);
+    setIsClient(true);
   }, []);
+
+  if (!isClient) return null; // Prevent rendering on the server
+
   return (
     <div
       className={`w-full flex flex-col items-center ${
