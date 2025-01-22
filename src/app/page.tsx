@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import homeDB from "./database/HomeDB.json";
 import Typewriter from "typewriter-effect";
-import Robot from "../../public/images/animation_picture/home.json";
+// import Robot from "../../public/images/animation_picture/home.json";
 // import AnimatedPicture from "@/components/animatedPicture";
-import Lottie from "lottie-react";
+
 import { AiFillInstagram } from "react-icons/ai";
 import { FaCode, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -29,15 +29,9 @@ export interface HomeDB {
 export default function Home() {
   const [homeData, setHomeData] = useState<HomeDB | null>(null);
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
-  const [isClient, setIsClient] = useState(false);
-
   useEffect(() => {
     setHomeData(homeDB);
-    setIsClient(true);
   }, []);
-
-  if (!isClient) return null; // Prevent rendering on the server
-
   return (
     <div
       className={`w-full flex flex-col items-center ${
@@ -168,7 +162,6 @@ export default function Home() {
         </div>
         <div className={`w-[50%] h-[100%] flex justify-center items-center`}>
           {/* <AnimatedPicture pathString={Robot} /> */}
-          <Lottie animationData={Robot} loop={true} />
         </div>
       </section>
 
