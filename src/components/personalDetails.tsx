@@ -80,7 +80,7 @@ const PersonalDetails = () => {
     >
       <div className={`w-[70%] flex flex-col gap-y-4 `}>
         <h1
-          className={`text-4xl font-bold text-purple-700s ${
+          className={`text-8xl font-bold text-purple-700s font-aestera py-4 tracking-wider ${
             isDarkmode ? "name-dark" : "name-light"
           }`}
         >

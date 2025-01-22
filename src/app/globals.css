@@ -1,6 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Rockybilly";
+  src: url("/fonts/Rockybilly.ttf");
+  /* src: local("Rockybilly"), url("/fonts/Rockybilly.ttf") format("ttf"); */
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: "Bastliga_One";
+  src: url("/fonts/Bastliga_One.ttf");
+}
+@font-face {
+  font-family: "Bidenatrial";
+  src: url("/fonts/Bidenatrial.ttf");
+}
+@font-face {
+  font-family: "Rekalgera-Regular";
+  src: url("/fonts/Rekalgera-Regular.otf");
+}
+@font-face {
+  font-family: "Aestera";
+  src: url("/fonts/Aestera.ttf");
+}
 body {
   box-sizing: border-box;
 }
