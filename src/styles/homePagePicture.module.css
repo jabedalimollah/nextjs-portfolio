@@ -1,0 +1,63 @@
+.homePage_picture_animation {
+  animation: smoothUpAndDownAnimation 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes smoothUpAndDownAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60px); /* Moves down */
+  }
+  100% {
+    transform: translateY(0); /* Returns to the starting position */
+  }
+}
+.homePage_clock_animation {
+  animation: smoothClockAnimation 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes smoothClockAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px); /* Moves down */
+  }
+  100% {
+    transform: translateY(0); /* Returns to the starting position */
+  }
+}
+.homePage_contact_animation {
+  animation: smoothContactAnimation 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes smoothContactAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.homePage_calendar_animation {
+  animation: smoothCalendarAnimation 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes smoothCalendarAnimation {
+  0% {
+    transform: translateX(0);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translateX(15px);
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: translateX(0);
+    transform: rotate(0deg);
+  }
+}

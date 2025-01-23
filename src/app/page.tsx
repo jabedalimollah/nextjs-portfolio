@@ -12,6 +12,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { PiMonitorBold } from "react-icons/pi";
 import { RiSettings5Fill } from "react-icons/ri";
 import { useSelector } from "react-redux";
+import HomePagePicture from "@/components/homePagePicture";
 export interface HomeDB {
   text: string;
   static_text: string;
@@ -162,6 +163,7 @@ export default function Home() {
         </div>
         <div className={`w-[50%] h-[100%] flex justify-center items-center`}>
           {/* <AnimatedPicture pathString={Robot} /> */}
+          <HomePagePicture />
         </div>
       </section>
 
@@ -248,6 +250,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* =============================== Skills ============================== */}
+      <section
+        className={`w-[100%] flex flex-col gap-y-8 items-center py-8 ${
+          isDarkmode ? "bg-slate-900" : "bg-gray-100"
+        }`}
+      ></section>
     </div>
   );
 }
