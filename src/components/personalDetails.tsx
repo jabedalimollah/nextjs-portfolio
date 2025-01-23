@@ -37,6 +37,7 @@ export interface AboutDb {
   address: string;
   location: string;
   profile_pic: string;
+  all_pictures: string[];
 }
 let profile_pic: string | object = aboutDB?.profile_pic;
 const PersonalDetails = () => {

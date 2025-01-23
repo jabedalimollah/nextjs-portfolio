@@ -7,5 +7,11 @@
   "phone_number": "+91 XXX-XXX-XXXX",
   "address": "Bankura, West Bengal, India",
   "location": "https://maps.app.goo.gl/pinp1jcADa7jzqNk8",
-  "profile_pic": "/images/Jabed_Ali.jpg"
+  "profile_pic": "/images/my_photos/Jabed_Ali.jpg",
+  "all_pictures": [
+    "/images/my_photos/Jabed_Ali.jpg",
+    "/images/my_photos/picture1.jpg",
+    "/images/my_photos/picture2.jpg",
+    "/images/my_photos/picture3.jpg"
+  ]
 }
