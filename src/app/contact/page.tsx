@@ -295,6 +295,14 @@ const page: React.FC = () => {
           >
             {" "}
             <ContactForm />
+            {/* -------------- Picture ----------- */}
+            <div className={`w-[48%] h-full flex items-center justify-center`}>
+              <img
+                src="/images/contact.png"
+                alt="contact_image"
+                className={`w-full`}
+              />
+            </div>
             {/* -------------- Animated Picture ----------- */}
             {/* <div className={`w-[48%] h-full flex items-center justify-center`}>
               {isDarkmode ? (
