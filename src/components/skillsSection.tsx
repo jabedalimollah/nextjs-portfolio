@@ -18,7 +18,7 @@ interface Skill {
   skill_title: string;
 }
 
-interface SkillsDb {
+export interface SkillsDb {
   frontend: Skill[];
   backend: Skill[];
   others: Skill[];

@@ -13,6 +13,7 @@ import { PiMonitorBold } from "react-icons/pi";
 import { RiSettings5Fill } from "react-icons/ri";
 import { useSelector } from "react-redux";
 import HomePagePicture from "@/components/homePagePicture";
+import SkillsSlider from "@/components/skillsSlider";
 export interface HomeDB {
   text: string;
   static_text: string;
@@ -251,12 +252,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =============================== Skills ============================== */}
+      {/* =============================== Tools & Technologies [ Skills ] ============================== */}
       <section
         className={`w-[100%] flex flex-col gap-y-8 items-center py-8 ${
-          isDarkmode ? "bg-slate-900" : "bg-gray-100"
+          isDarkmode ? "text-gray-400" : "text-black"
         }`}
-      ></section>
+      >
+        <SkillsSlider />
+      </section>
     </div>
   );
 }
