@@ -45,7 +45,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
   }, []);
   return (
     <div
-      className={`w-[26%] flex items-center justify-center relative ${
+      className={`w-[100%] md:w-[80%] lg:w-[26%] flex items-center justify-center relative ${
         isDarkmode ? "text-purple-100" : "text-purple-700"
       }`}
     >
@@ -110,7 +110,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
                           <img
                             src={image}
                             alt={image}
-                            className="w-full h-[55vh]"
+                            className="w-full h-[35vh] lg:h-[55vh]"
                           />
                         </div>
                         {/* <div className="flex aspect-square items-center justify-center p-6">
@@ -156,7 +156,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
         </div>
       </div>
       <div
-        className={`w-full h-full p-10 rounded-full flex items-center justify-center border border-dotted shadow-2xls shadow-purple-700 border-purple-700 absolute top-0 left-0 ${Style.profile_pic_animation}`}
+        className={` w-full h-full p-10 rounded-full flex items-center justify-center border border-dotted shadow-2xls shadow-purple-700 border-purple-700 absolute top-0 left-0 ${Style.profile_pic_animation}`}
       >
         <a
           href={socialMedia?.github}

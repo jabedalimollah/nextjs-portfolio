@@ -51,3 +51,18 @@
     rotate: 360deg;
   }
 }
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .profile_pic_animation {
+    rotate: 0deg;
+
+    animation-name: none;
+    animation-duration: 20s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+  }
+}

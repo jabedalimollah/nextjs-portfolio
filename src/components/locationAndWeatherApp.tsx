@@ -13,24 +13,27 @@ const LocationAndWeatherApp = () => {
     setContactData(aboutDB);
   }, []);
   return (
-    <section className={`w-full flex justify-center my-6`}>
-      <div className={`w-[80%]  flex  gap-y-6 py-6`}>
+    <section className={`w-full flex justify-center my-2 lg:my-4`}>
+      <div className={`w-[80%]  flex flex-col lg:flex-row gap-y-6 py-6`}>
         {/* ================== Google Map ================= */}
         <div
-          className={`w-[50%] overflow-hidden px-6 pb-6 borders shadow-xl ${
+          className={`w-full lg:w-[50%] overflow-hidden px-6 pb-6 borders shadow-xl ${
             isDarkmode
               ? "shadow-slate-800 border-purple-500 bg-slate-900"
               : "shadow-slate-200 border-purple-600 bg-white"
           }   rounded-md`}
         >
           <h1
-            className={`h-[10%] flex items-center gap-x-2 text-2xl ${
+            className={`lg:h-[10%] flex flex-col md:flex-row items-center gap-x-2 py-2 lg:py-0 text-lg md:text-2xl ${
               isDarkmode ? "text-purple-500" : "text-purple-600"
             }  font-semibold`}
           >
             {/* <TiLocation /> */}
-            <FaMapLocationDot />
-            Location :-{" "}
+            <span className="flex items-center gap-x-1 md:gap-x-2">
+              <FaMapLocationDot />
+              Location :-{" "}
+            </span>
+
             <a
               href={`${contactData?.location}`}
               target="_blank"
@@ -48,7 +51,7 @@ const LocationAndWeatherApp = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className={`w-full h-[90%] `}
+            className={`w-full lg:h-[90%] `}
           />
         </div>
         {/* =============== Weather App =============== */}

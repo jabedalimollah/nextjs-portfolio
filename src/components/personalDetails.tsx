@@ -75,13 +75,14 @@ const PersonalDetails = () => {
 
   return (
     <section
-      className={`w-[80%] flex items-center mt-10 py-6 ${
+      className={`w-[80%] flex flex-col lg:flex-row items-center  gap-y-7 lg:gap-y-0 mt-0 md:mt-10 py-6 ${
         isDarkmode ? "text-white" : "text-black"
       }`}
     >
-      <div className={`w-[70%] flex flex-col gap-y-4 `}>
+      <div className={`w-full lg:w-[70%] flex flex-col gap-y-4 `}>
         <h1
-          className={`text-8xl font-bold text-purple-700s font-aestera py-4 tracking-wider ${
+          style={{ fontSize: "0.5rem" }}
+          className={` md:text-8xl font-bold text-purple-700s font-aestera py-4 tracking-wider ${
             isDarkmode ? "name-dark" : "name-light"
           }`}
         >
@@ -102,7 +103,9 @@ const PersonalDetails = () => {
           />
         </h3>
         <p>{aboutData?.about_description}</p>
-        <div className={`grid grid-cols-2 gap-4 `}>
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base `}
+        >
           <div className={`flex gap-x-1`}>
             <span
               className={`font-semibold ${
@@ -134,7 +137,7 @@ const PersonalDetails = () => {
                 </button>
               </DialogTrigger>
               <DialogContent
-                className={`sm:max-w-[425px]s ${
+                className={`sm:max-w-[425px]s  ${
                   isDarkmode ? "bg-slate-800 text-white" : "bg-white text-black"
                 }`}
               >
@@ -157,7 +160,7 @@ const PersonalDetails = () => {
                   </DialogTitle>
                   <DialogDescription
                     // className={`${isDarkmode ? "text-white" : "text-black"}`}
-                    className={`w-full text-center font-serif text-lg ${
+                    className={` w-full text-left md:text-center font-serif text-base md:text-lg ${
                       isDarkmode ? "text-purple-200" : "text-purple-700"
                     }`}
                   >
@@ -181,7 +184,7 @@ const PersonalDetails = () => {
 
                 {isCalendar ? (
                   <div
-                    className={`w-full flex flex-col items-center justify-center`}
+                    className={`w-[80%] md:w-full flex flex-col items-center justify-center`}
                   >
                     <Calendar
                       value={"08/10/2000"}
@@ -208,7 +211,7 @@ const PersonalDetails = () => {
                 isDarkmode ? "text-purple-500" : "text-purple-700"
               } flex items-center gap-x-1`}
             >
-              <IoIosMail className={`text-2xl`} /> Email :{" "}
+              <IoIosMail className={`text-lg md:text-2xl`} /> Email :{" "}
             </span>
             <a
               href={`mailto:${aboutData?.email}`}
@@ -226,7 +229,7 @@ const PersonalDetails = () => {
                 isDarkmode ? "text-purple-500" : "text-purple-700"
               } flex items-center gap-x-1`}
             >
-              <RiPhoneFill className={`text-2xl`} /> Phone Number :{" "}
+              <RiPhoneFill className={`text-lg md:text-2xl`} /> Phone Number :{" "}
             </span>
             <span
               className={`hover:cursor-not-allowed  ${
@@ -242,7 +245,7 @@ const PersonalDetails = () => {
                 isDarkmode ? "text-purple-500" : "text-purple-700"
               } flex items-center gap-x-1`}
             >
-              <IoHome className={`text-lg`} /> Address :{" "}
+              <IoHome className={`text-md md:text-lg`} /> Address :{" "}
             </span>
             <a
               href={`${aboutData?.location}`}

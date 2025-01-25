@@ -77,15 +77,15 @@ const page: React.FC = () => {
           ></div>
         </div>
 
-        <div className={`w-full flex gap-x-4`}>
+        <div className={`w-full flex flex-col lg:flex-row gap-y-2 gap-x-4`}>
           <div
-            className={`w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
+            className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
                 ? "bg-slate-900 hover:bg-slate-950"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
-            <div className={`w-[20%]`}>
+            <div className={` w-[15%] lg:w-[20%]`}>
               {" "}
               <img
                 src={"/images/smartphone.svg"}
@@ -111,13 +111,13 @@ const page: React.FC = () => {
             </div>
           </div>
           <div
-            className={`w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
+            className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
                 ? "bg-slate-900 hover:bg-slate-950"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
-            <div className={`w-[20%]`}>
+            <div className={`w-[15%] lg:w-[20%]`}>
               {" "}
               <img
                 src={"/images/email.svg"}
@@ -144,13 +144,13 @@ const page: React.FC = () => {
             </div>
           </div>
           <div
-            className={`w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
+            className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
                 ? "bg-slate-900 hover:bg-slate-950"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
-            <div className={`w-[20%]`}>
+            <div className={`w-[15%] lg:w-[20%]`}>
               {" "}
               <img
                 src={"/images/home.svg"}
@@ -201,7 +201,9 @@ const page: React.FC = () => {
             </span>
           </h1>
         </div>
-        <div className={`w-full flex gap-x-2 my-4`}>
+        <div
+          className={`w-full flex flex-col lg:flex-row gap-y-2 gap-x-2 my-4`}
+        >
           <a
             href={socialMedia?.instagram}
             target="_blank"
@@ -289,14 +291,16 @@ const page: React.FC = () => {
 
         <div className={`w-full flex justify-center items-center`}>
           <div
-            className={`w-[80%] my-4 flex justify-between items-center  shadow-md ${
+            className={`w-full md:w-[80%] my-4 flex flex-col lg:flex-row justify-between items-center  shadow-md ${
               isDarkmode ? "bg-slate-900" : "bg-white"
             } rounded-md`}
           >
             {" "}
             <ContactForm />
             {/* -------------- Picture ----------- */}
-            <div className={`w-[48%] h-full flex items-center justify-center`}>
+            <div
+              className={`w-full lg:w-[48%] h-full flex items-center justify-center`}
+            >
               <img
                 src="/images/contact.png"
                 alt="contact_image"

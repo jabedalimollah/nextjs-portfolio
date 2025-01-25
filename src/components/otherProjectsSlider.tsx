@@ -32,13 +32,16 @@ const OtherProjectsSlider: React.FC<SelectedProjectName> = ({
         loop: true,
       }}
       plugins={[Autoplay({ delay: 2000 })]}
-      className="w-[80%] max-w-xss"
+      className="w-[70%] lg:w-[80%] max-w-xss"
     >
       <CarouselContent>
         {reverseProjectData?.map(
           (project, index) =>
             project?.project_name != selectedProjectName && (
-              <CarouselItem key={index} className={`basis-1/3`}>
+              <CarouselItem
+                key={index}
+                className={`basis-1/1 md:basis-2/2 lg:basis-1/3 w-full`}
+              >
                 <div
                   className={`p-3 rounded-md m-2 borders shadow-md ${
                     isDarkmode
@@ -60,7 +63,7 @@ const OtherProjectsSlider: React.FC<SelectedProjectName> = ({
                   /> */}
                     </div>
                     <div
-                      className={`w-full flex justify-between items-center mb-1 mt-3`}
+                      className={`w-full flex flex-col lg:flex-row justify-between items-center mb-1 mt-3`}
                     >
                       <h1
                         className={`flex items-center gap-x-1 font-semibold text-lg ${

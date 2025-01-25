@@ -44,13 +44,13 @@ const HomePagePicture = () => {
     <div className={`w-full flex justify-center items-center h-full `}>
       <div className={`w-full h-full flex items-center justify-center `}>
         <div
-          className={`w-full h-full flex justify-center items-center  relative ${Style.homePage_picture_animation}`}
+          className={`w-full h-[50vh] md:h-[45vh] lg:h-full flex justify-center items-start md:items-center pt-2 md:pt-0  relative ${Style.homePage_picture_animation}`}
         >
           {" "}
           {/* ======================== Contact Icon ============================== */}
           <Link
             href={"/contact"}
-            className={`absolute left-40 top-24 z-10 ${Style.homePage_contact_animation}`}
+            className={`absolute left-0 md:left-40 top-5 md:top-24 z-10 ${Style.homePage_contact_animation}`}
           >
             <img
               src="/icons/contacts.svg"
@@ -63,23 +63,23 @@ const HomePagePicture = () => {
           {/* ======================== Project Icon =============================== */}
           <Link
             href={"/projects"}
-            className={`absolute right-24 top-52 z-10 ${Style.homePage_contact_animation}`}
+            className={`absolute right-0 md:right-24 top-32 md:top-52 z-10 ${Style.homePage_contact_animation}`}
           >
             {/* <FcBriefcase className={`text-4xl text-purple-600`} /> */}
             <img
               src="/icons/coding.svg"
               alt="project"
-              className={`w-12 hover:w-14 transition-all `}
+              className={`w-10 md:w-12 hover:w-14 transition-all `}
             />
           </Link>
           {/* ======================= About Icon ======================== */}
           <Link
             href={"/about"}
-            className={`absolute right-40 top-32  z-10 ${Style.homePage_calendar_animation} `}
+            className={`absolute right-7 md:right-40 top-6 md:top-32  z-10 ${Style.homePage_calendar_animation} `}
           >
             {/* <FcAbout className={`text-4xl text-purple-600`} /> */}
             <FaIdCard
-              className={`text-5xl hover:text-6xl transition-all ${
+              className={`text-4xl md:text-5xl hover:text-6xl transition-all ${
                 isDarkmode ? "text-purple-500" : "text-purple-600"
               } `}
             />
@@ -101,7 +101,7 @@ const HomePagePicture = () => {
           {/* ====================== Sun and Moon Icon =========================== */}
           <button
             onClick={() => dispatch(setDarkMood())}
-            className={`absolute left-32 top-52 z-10 text-4xl hover:text-5xl transition-all  ${Style.homePage_contact_animation}`}
+            className={`absolute left-0 md:left-32 top-36 md:top-52 z-10 text-4xl hover:text-5xl transition-all  ${Style.homePage_contact_animation}`}
           >
             {isDarkmode ? (
               <MdWbSunny className={`text-yellow-400 hover:text-yellow-500`} />
@@ -115,22 +115,43 @@ const HomePagePicture = () => {
           <img
             src="/images/yoga.png"
             alt="yoga"
-            className={`w-[70%] absolute drop-shadow-customs `}
+            className={`w-[100%] md:w-[70%] absolute drop-shadow-customs `}
           />
           {/* ======================= Clock ======================== */}
-          <Clock
-            value={time}
-            // size={300}
-            // size={200}
-            renderNumbers={true}
-            className={`border-8 absolute z-10 top-14 ${
-              Style.homePage_clock_animation
-            } ${
-              isDarkmode
-                ? " border-purple-500 bg-purple-100 text-purple-600"
-                : " border-purple-600 text-purple-600 bg-purple-100"
-            } rounded-full`}
-          />
+          {/* ==================== Clock for tablet, laptop and desktop view ================ */}
+          <div className=" w-full h-full  hidden md:flex justify-center items-center">
+            <Clock
+              value={time}
+              // size={300}
+              // size={100}
+              // size={120}
+              renderNumbers={true}
+              className={` border-8 absolute z-10 top-14 text-xs md:text-base ${
+                Style.homePage_clock_animation
+              } ${
+                isDarkmode
+                  ? " border-purple-500 bg-purple-100 text-purple-600"
+                  : " border-purple-600 text-purple-600 bg-purple-100"
+              } rounded-full`}
+            />
+          </div>
+          {/* ====================== Clock for mobile view ====================== */}
+          <div className=" w-full h-full  flex md:hidden justify-center items-center">
+            <Clock
+              value={time}
+              // size={300}
+              // size={100}
+              size={120}
+              renderNumbers={true}
+              className={` border-8 absolute z-10 top-0 md:top-14 text-xs md:text-base ${
+                Style.homePage_clock_animation
+              } ${
+                isDarkmode
+                  ? " border-purple-500 bg-purple-100 text-purple-600"
+                  : " border-purple-600 text-purple-600 bg-purple-100"
+              } rounded-full`}
+            />
+          </div>
         </div>
       </div>
     </div>

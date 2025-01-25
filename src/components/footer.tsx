@@ -9,9 +9,12 @@ import { useSelector } from "react-redux";
 
 const Footer = () => {
   const [socialMedia, setSocialMedia] = useState<HomeDB | null>(null);
+  const [year, setYear] = useState(new Date().getFullYear());
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
+
   useEffect(() => {
     setSocialMedia(homeDB);
+    setYear(new Date().getFullYear());
   }, []);
   return (
     <footer
@@ -22,7 +25,9 @@ const Footer = () => {
       <div
         className={`w-full flex flex-col items-center justify-center gap-y-2  py-6 bg-purple-800`}
       >
-        <p className={`text-4xl py-2  font-serifs font-bidenatrial`}>
+        <p
+          className={`text-3xl md:text-4xl py-2  font-serifs font-bidenatrial`}
+        >
           {" "}
           Jabed Ali Mollah
         </p>
@@ -61,8 +66,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className={`w-full flex justify-center py-4 bg-purple-950`}>
-        <p>Copyright ©2025 All Rights Reserved.</p>
+      <div
+        className={`w-full flex justify-center py-4 bg-purple-950 text-sm md:text-base`}
+      >
+        <p>Copyright ©{year} All Rights Reserved.</p>
       </div>
     </footer>
   );

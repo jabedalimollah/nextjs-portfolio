@@ -117,7 +117,7 @@ const Page: React.FC = () => {
               >
                 🛠️ Technologies Used
               </h3>
-              <div className={`w-full flex flex-col gap-y-3`}>
+              <div className={`w-full flex flex-col gap-y-6 lg:gap-y-3`}>
                 {projectDetails?.tech_stack?.frontend?.length != 0 && (
                   <div className={`w-full flex  items-centers gap-x-2`}>
                     <h4 className={`text-lg font-semibold`}>Frontend </h4>
@@ -137,7 +137,7 @@ const Page: React.FC = () => {
                   </div>
                 )}
                 {projectDetails?.tech_stack?.backend?.length != 0 && (
-                  <div className={`w-full flex items-center gap-x-2`}>
+                  <div className={`w-full flex items-centers gap-x-2`}>
                     <h4 className={`text-lg font-semibold`}>Backend</h4>
                     <p className={`text-lg font-semibold`}> : </p>
                     <ul className={`flex gap-1 flex-wrap `}>
@@ -182,7 +182,9 @@ const Page: React.FC = () => {
               >
                 🔗 Links
               </h3>
-              <div className={`w-full flex gap-x-2`}>
+              <div
+                className={`w-full flex flex-col md:flex-row gap-y-2 gap-x-2`}
+              >
                 {projectDetails?.github_link?.length != 0 && (
                   <a
                     href={projectDetails?.github_link}

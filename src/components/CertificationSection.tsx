@@ -55,7 +55,7 @@ const CertificationSection = () => {
       </div>
       {!showHide && (
         <div
-          className={`w-[80%] h-full grid grid-cols-3  place-items-center  gap-6 `}
+          className={`w-[80%] h-full grid grid-cols-2 md:grid-cols-3  place-items-center  gap-6 `}
         >
           {certificateData?.map((item, index) => (
             <Dialog key={index}>
@@ -79,7 +79,7 @@ const CertificationSection = () => {
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className=" w-full max-w-fit">
+              <DialogContent className=" w-full md:max-w-fit">
                 <DialogHeader>
                   <DialogTitle></DialogTitle>
                   <DialogDescription></DialogDescription>

@@ -92,13 +92,13 @@ const CalendarAndAgeCalculator = () => {
   return (
     <section className={`w-full flex justify-center my-6`}>
       <div
-        className={`w-[80%] flex rounded-md shadow-2xl ${
+        className={`w-[80%] flex flex-col md:flex-row rounded-md shadow-2xl ${
           isDarkmode ? "shadow-slate-900" : "shadow-slate-300"
         } `}
       >
         {/* ============ Date =============== */}
         <div
-          className={`w-[50%] flex flex-col items-center justify-center text-purple-500 ${
+          className={`w-full md:w-[50%] flex flex-col items-center justify-center text-purple-500 ${
             isDarkmode ? "bg-slate-900" : "bg-white"
           }  p-6`}
         >
@@ -120,7 +120,7 @@ const CalendarAndAgeCalculator = () => {
           </div>
         </div>
         {/* ============== Calendar And Age Calculator ================== */}
-        <div className={`w-[50%] flex justify-center  `}>
+        <div className={`w-full md:w-[50%] flex justify-center  `}>
           {showCalendar ? (
             <>
               {/* ============ Calendar =============== */}
@@ -250,9 +250,10 @@ const CalendarAndAgeCalculator = () => {
                     />
                   </div>
                   <p
-                    className={`w-full flex items-center justify-center gap-x-2 text-white`}
+                    className={`w-full flex flex-col lg:flex-row items-center justify-center gap-x-2 text-white`}
                   >
-                    <LiaBirthdayCakeSolid /> {age}
+                    <LiaBirthdayCakeSolid className={`text-lg lg:text-base`} />{" "}
+                    {age}
                   </p>
                   <button
                     onClick={handleCalculateAge}

@@ -41,11 +41,13 @@ export default function Home() {
       }`}
     >
       <section
-        className={`w-[80%] h-[80vh] flex ${
+        className={`w-[80%] h-auto lg:h-[80vh] flex flex-col lg:flex-row ${
           isDarkmode ? "text-gray-400" : "text-black"
         }`}
       >
-        <div className={`w-[50%] h-[90%] flex flex-col justify-center gap-y-2`}>
+        <div
+          className={`w-full lg:w-[50%] h-full lg:h-[90%] flex flex-col justify-center gap-y-2 pt-10 lg:pt-0`}
+        >
           <h2
             className={`text-3xl ${
               isDarkmode ? "text-slate-400" : "text-slate-500"
@@ -53,7 +55,9 @@ export default function Home() {
           >
             🙋‍♂️ {homeData?.text}
           </h2>
-          <h1 className={`font-bold text-3xl flex gap-x-3`}>
+          <h1
+            className={`font-bold text-xl md:text-3xl flex gap-x-1 md:gap-x-3`}
+          >
             {homeData?.static_text}
             <span
               className={`${
@@ -70,14 +74,14 @@ export default function Home() {
             </span>
           </h1>
           <p
-            className={`w-[80%] my-2 ${
+            className={`w-full md:w-[80%] my-2 ${
               isDarkmode ? "text-slate-300" : "text-black"
             }`}
           >
             {homeData?.home_description}
           </p>
           <button
-            className={`w-[50%] bg-purple-700 hover:bg-purple-800 hover:scale-x-95 text-white shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
+            className={`w-full md:w-[50%] bg-purple-700 hover:bg-purple-800 hover:scale-x-95 text-white shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
           >
             Hire me
           </button>
@@ -162,7 +166,9 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className={`w-[50%] h-[100%] flex justify-center items-center`}>
+        <div
+          className={`w-full lg:w-[50%] h-[100%] flex justify-center items-center`}
+        >
           {/* <AnimatedPicture pathString={Robot} /> */}
           <HomePagePicture />
         </div>
@@ -186,9 +192,11 @@ export default function Home() {
           <hr className={`w-[80%] border-b-2 my-2 border-purple-700`} />
         </h2>
 
-        <div className={`w-full flex justify-evenly`}>
+        <div
+          className={`w-full flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-evenly gap-y-5 lg:gap-y-0`}
+        >
           <div
-            className={`w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
+            className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-800" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >
@@ -209,7 +217,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className={`w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
+            className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-800" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >
@@ -230,7 +238,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className={`w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
+            className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-800" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >

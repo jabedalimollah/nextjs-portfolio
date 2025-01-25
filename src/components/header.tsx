@@ -62,7 +62,7 @@ const Header: React.FC = () => {
       {/* ===================== Clock and Calendar Start ============================= */}
       <Dialog>
         <DialogTrigger asChild>
-          <div className={`flex gap-x-6`}>
+          <div className={`flex gap-x-6 text-sm md:text-base`}>
             <button
               onClick={() => setIsClock(true)}
               className={`text-white font-mono hover:text-purple-200`}
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
           </div>
         </DialogTrigger>
         <DialogContent
-          className={`sm:max-w-[425px]s ${
+          className={`sm:max-w-[425px]s  ${
             isDarkmode ? "bg-slate-800 text-white" : "bg-white text-black"
           }`}
         >
@@ -89,7 +89,7 @@ const Header: React.FC = () => {
             <DialogTitle className={`w-full flex gap-x-2 my-2 `}>
               <button
                 onClick={() => setIsClock(true)}
-                className={`w-[50%]  ${
+                className={`w-[45%] md:w-[50%]  ${
                   isDarkmode
                     ? `${isClock ? "bg-slate-900" : "bg-slate-700 "}`
                     : `${isClock ? "bg-slate-200" : "bg-slate-100 "}`
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
               </button>
               <button
                 onClick={() => setIsClock(false)}
-                className={`w-[50%]  ${
+                className={`w-[45%] md:w-[50%]  ${
                   isDarkmode
                     ? `${isClock ? "bg-slate-700" : "bg-slate-900 "}`
                     : `${isClock ? "bg-slate-100" : "bg-slate-200 "}`
@@ -147,7 +147,9 @@ const Header: React.FC = () => {
               </div>
             </div>
           ) : (
-            <div className={`w-full flex flex-col items-center justify-center`}>
+            <div
+              className={`w-[90%] md:w-full flex flex-col items-center justify-center`}
+            >
               <Calendar
                 onChange={handleDateChange}
                 value={date}
@@ -161,10 +163,10 @@ const Header: React.FC = () => {
       </Dialog>
       {/* ==================== Clock and Calendar End ======================= */}
       <ul
-        className={`w-[30%] flex justify-evenly items-center text-white px-6`}
+        className={`w-[30%] hidden lg:flex justify-evenly items-center text-white px-6`}
       >
         <li>
-          <Link href={"/"} className={`hover:font-semibold`}>
+          <Link href={"/"} className={`hover:font-semibold `}>
             Home
           </Link>
         </li>
@@ -193,6 +195,16 @@ const Header: React.FC = () => {
           </button>
         </li>
       </ul>
+      <button
+        className={`flex lg:hidden text-white px-6`}
+        onClick={() => dispatch(setDarkMood())}
+      >
+        {isDarkmode ? (
+          <FiSun className=" hover:scale-125" />
+        ) : (
+          <RiMoonClearLine className=" hover:scale-125" />
+        )}
+      </button>
       {/* <button
         className={`flex border-l-2 border-slate-100 text-white px-4`}
         onClick={() => dispatch(setDarkMood())}

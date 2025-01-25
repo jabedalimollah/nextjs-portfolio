@@ -42,11 +42,11 @@ const CalendarComponent = () => {
     <Dialog>
       <DialogTrigger asChild>
         <button
-          className={`absolute right-24 bottom-28  z-10 border-t-8 ${
+          className={`absolute right-0 md:right-24 bottom-16 md:bottom-28  z-10 border-t-8 ${
             isDarkmode
               ? "border-white bg-purple-500"
               : "border-black bg-purple-600"
-          }  text-white font-semibold rounded-md p-2 hover:p-3 transition-all ${
+          }  text-white font-semibold rounded-md  p-1 md:p-2 hover:p-3 transition-all ${
             Style.homePage_calendar_animation
           }`}
         >
@@ -54,7 +54,7 @@ const CalendarComponent = () => {
           {months[month]}
         </button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] ">
         <DialogHeader>
           <DialogTitle>
             <p
@@ -70,11 +70,12 @@ const CalendarComponent = () => {
           <div className="grid grid-cols-4 items-center gap-4"></div>
           <div className="grid grid-cols-4 items-center gap-4"></div>
         </div> */}
-        <div className={`w-full flex items-center justify-center`}>
+        <div className={`w-[90%] md:w-full flex items-center justify-center`}>
           <Calendar
             // onChange={handleDateChange}
+
             value={date}
-            className={`text-black rounded-md`}
+            className={`text-black rounded-md w-[100%]`}
           />
         </div>
         <DialogFooter></DialogFooter>

@@ -19,13 +19,19 @@ const SkillsSlider = () => {
     <div className={`w-full flex flex-col items-center justify-center gap-y-7`}>
       <div className={`w-full flex flex-col items-center gap-y-1`}>
         <h2
-          className={`flex items-center gap-x-1  text-3xl text-purple-500 font-mono `}
+          className={`flex flex-cols flex-row items-center gap-x-1 text-xl md:text-3xl text-purple-500 font-mono `}
         >
           <RiToolsFill /> Tools & Technologies
         </h2>
-        <div className={`w-[15%] h-1 border-b-2 border-purple-500`}></div>
-        <div className={`w-[10%] h-1 border-b-2 border-purple-500`}></div>
-        <div className={`w-[5%] h-1 border-b-2 border-purple-500`}></div>
+        <div
+          className={`w-[55%] md:w-[35%] lg:w-[15%] h-1 border-b-2 border-purple-500`}
+        ></div>
+        <div
+          className={`w-[40%] md:w-[25%] lg:w-[10%] h-1 border-b-2 border-purple-500`}
+        ></div>
+        <div
+          className={`w-[20%] md:w-[15%] lg:w-[5%] h-1 border-b-2 border-purple-500`}
+        ></div>
       </div>
 
       <div className={`w-full`}>

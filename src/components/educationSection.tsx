@@ -70,30 +70,32 @@ const EducationSection = () => {
                 </svg>
               </div>
               <div
-                className={`timeline-end timeline-box w-full my-4 hover:scale-x-95 transition-all shadow-md cursor-pointer ${
+                className={`timeline-end timeline-box w-full my-4 rounded-md md:rounded-xl hover:scale-x-95 transition-all shadow-md cursor-pointer ${
                   isDarkmode
                     ? "bg-slate-900 border-none border-black"
                     : "bg-white"
                 } `}
               >
-                <div className={`w-full flex gap-x-6 `}>
-                  <div className={`w-[25%] h-40 `}>
+                <div className={`w-full flex flex-col md:flex-row gap-x-6 `}>
+                  <div className={`w-full md:w-[30%] lg:w-[25%] h-40 `}>
                     <img
                       src={item?.institution_pic}
                       alt={item?.institute_name}
                       className={`w-full h-[100%] rounded-md`}
                     />
                   </div>
-                  <div className={`w-[70] py-4 flex flex-col gap-y-1`}>
+                  <div
+                    className={`w-full md:w-[65%] lg:w-[70] py-4 flex flex-col gap-y-1`}
+                  >
                     <h3
-                      className={`font-bold text-2xl ${
+                      className={`font-bold text-lg md:text-2xl ${
                         isDarkmode ? "text-purple-500" : "text-purple-700"
                       }`}
                     >
                       {item?.institute_degree}
                     </h3>
                     <p
-                      className={` text-base ${
+                      className={`text-sm md:text-base ${
                         isDarkmode
                           ? "text-slate-300 font-semibold"
                           : "text-slate-600 font-bold"
@@ -102,7 +104,7 @@ const EducationSection = () => {
                       {item?.institute_name}
                     </p>
                     <span
-                      className={`font-bold text-lg ${
+                      className={`font-bold text-base md:text-lg ${
                         isDarkmode ? "text-green-600" : "text-green-800"
                       }`}
                     >

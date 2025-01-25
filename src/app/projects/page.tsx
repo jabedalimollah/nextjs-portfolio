@@ -9,6 +9,7 @@ import { MdAccessTimeFilled } from "react-icons/md";
 import { IoCalendarNumber } from "react-icons/io5";
 import { ImMenu } from "react-icons/im";
 import { useSelector } from "react-redux";
+import { FaEquals } from "react-icons/fa";
 
 export interface ProjectData {
   id: number;
@@ -184,7 +185,7 @@ const Page: React.FC = () => {
           <div className="w-full flex justify-center gap-x-1">
             {/* -------------------- Search Box -------------------- */}
             <div
-              className={`w-[20%] flex ${
+              className={` w-[80%] md:w-[60%] lg:w-[20%] flex ${
                 isDarkmode ? "shadow-md shadow-black" : "shadow-md"
               }`}
             >
@@ -230,7 +231,7 @@ const Page: React.FC = () => {
               {open && (
                 <div
                   ref={menuRef}
-                  className={`w-72 absolute top-11 right-0 md:left-1 lg:left-0 font-semibold ${
+                  className={`w-72 absolute top-11 right-0 md:left-1s lg:left-0 font-semibold ${
                     isDarkmode ? "bg-slate-800" : "bg-white shadow-gray-400"
                   } shadow-2xl rounded-md z-50`}
                 >
@@ -282,7 +283,9 @@ const Page: React.FC = () => {
                         } flex items-center gap-x-2 text-base px-4 py-2 rounded cursor-pointer`}
                         onClick={() => gridHandler(3)}
                       >
-                        <BsFillGrid3X3GapFill /> Grid
+                        <BsFillGrid3X3GapFill className="hidden lg:inline-block" />
+                        <FaEquals className="inline-block lg:hidden" />
+                        Grid
                       </li>
                       <li
                         className={`${
@@ -329,14 +332,14 @@ const Page: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full flex justify-center gap-x-2">
+        <div className="w-full flex justify-center flex-wrap gap-y-2 gap-x-2">
           {skils.map((item, index) => (
             <button
               key={index}
               onClick={() => handleSkillFilter(item)}
               className={`border-2 ${
                 isDarkmode
-                  ? `border-purple-500 hover:bg-purple-500 hover:text-white  ${
+                  ? `border-purple-500 lg:hover:bg-purple-500 lg:hover:text-white  ${
                       skill == item
                         ? "bg-purple-500 text-white"
                         : "bg-transparent text-purple-700"
@@ -345,7 +348,7 @@ const Page: React.FC = () => {
                       skill == item
                         ? "bg-purple-700 text-white"
                         : "bg-white text-purple-700"
-                    } hover:bg-purple-700 hover:text-white `
+                    } lg:hover:bg-purple-700 lg:hover:text-white `
               } px-2 py-1 rounded shadow-md`}
             >
               {item}
@@ -358,12 +361,12 @@ const Page: React.FC = () => {
       <section className="w-full flex justify-center py-6 min-h-[70vh]">
         {projectData.length ? (
           <div
-            className={`w-[80%] grid ${
-              grid === 3 ? "grid-cols-3" : "grid-cols-2"
-            } gap-10 mb-10`}
+            className={`w-[90%] md:w-[95%] lg:w-[80%] grid ${
+              grid === 3 ? "grid-cols-1 lg:grid-cols-3" : "grid-cols-2"
+            } gap-3 lg:gap-10 mb-10`}
           >
             {projectData.map((data) => (
-              <Project key={data.id} data={data} />
+              <Project key={data.id} data={data} grid={grid} />
             ))}
           </div>
         ) : (

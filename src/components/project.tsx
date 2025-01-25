@@ -17,9 +17,10 @@ import { useSelector } from "react-redux";
 // }
 interface ProjectProps {
   data: ProjectData;
+  grid: number;
 }
 
-const project: React.FC<ProjectProps> = ({ data }) => {
+const project: React.FC<ProjectProps> = ({ data, grid }) => {
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   return (
     <div
@@ -31,7 +32,9 @@ const project: React.FC<ProjectProps> = ({ data }) => {
       } hover:shadow-none p-4  rounded-xl`}
     >
       <div
-        className={`w-[full] h-60 bg-cover bg-center transition-transform duration-500 transform hover:scale-105  bg-no-repeat`}
+        className={`w-[full] ${
+          grid == 2 ? "h-28" : "h-60"
+        }  md:h-60 bg-cover bg-center transition-transform duration-500 transform hover:scale-105  bg-no-repeat`}
         style={{ backgroundImage: `url(${data?.project_image[0]})` }}
       >
         {/* <img
@@ -42,7 +45,11 @@ const project: React.FC<ProjectProps> = ({ data }) => {
       </div>
       <div className="w-full">
         <Link href={`/projects/${data?.id}`} className="inline-block">
-          <h2 className="font-bold flex items-center gap-x-1 text-xl text-purple-600 my-2 hover:underline">
+          <h2
+            className={`font-bold flex items-center gap-x-1 ${
+              grid == 2 ? "text-lg" : "text-xl"
+            } md:text-xl text-purple-600 my-2 hover:underline`}
+          >
             {/* <MdWork className={`text-purple-400`} /> */}
             {/* 💫 */}
             <span className="loading loading-ring"></span>
@@ -57,25 +64,32 @@ const project: React.FC<ProjectProps> = ({ data }) => {
           {data?.project_info}
         </p>
       </div>
-      <div className="w-full flex justify-between mt-2">
+
+      <div className="w-full flex flex-col md:flex-row justify-between gap-y-2 mt-0 md:mt-2">
+        <Link
+          href={`/projects/${data?.id}`}
+          className={`inline-block md:hidden text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
+        >
+          More Details...
+        </Link>
         <a
           href={data?.github_link}
           target="_blank"
-          className={`bg-slate-700 hover:bg-slate-800 text-white px-2 py-1 rounded flex items-center gap-x-1 `}
+          className={`bg-slate-700 hover:bg-slate-800 text-white px-2 py-2 lg:py-1 rounded flex items-center gap-x-1 `}
         >
           <FaGithub />
           Code
         </a>
         <Link
           href={`/projects/${data?.id}`}
-          className={`text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
+          className={`hidden md:inline-block text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
         >
           More Details
         </Link>
         <a
           href={data?.live_link}
           target="_blank"
-          className={`bg-purple-700 hover:bg-purple-800 text-white px-3 py-1 rounded flex items-center gap-x-1 `}
+          className={`bg-purple-700 hover:bg-purple-800 text-white px-3 py-2 lg:py-1 rounded flex items-center gap-x-1 `}
         >
           <FiExternalLink />
           Live Link
