@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import GoToTop from "@/components/goToTop";
 import { StoreProvider } from "./redux/storeProvider";
 import Footer from "@/components/footer";
+import BottomMenu from "@/components/bottomMenu";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Header />
           {children}
           <GoToTop />
+          <BottomMenu />
           <Footer />
         </StoreProvider>
       </body>

@@ -52,9 +52,9 @@ const Header: React.FC = () => {
   //   }, 1000);
   // }, []);
   return (
-    <header className="h-11 w-full flex justify-between items-center bg-purple-700 sticky z-50 top-0 left-0">
+    <header className="h-11 w-full flex justify-around  md:justify-between items-center bg-violet-700 sticky z-50 top-0 left-0">
       <Link href={"/"} className="h-[60%]">
-        <div className="h-full ml-3 flex gap-x-1">
+        <div className="h-full ml-0 md:ml-4 lg:ml-4 flex gap-x-1">
           <img src={"/images/logo1-white.png"} alt="logo" className="h-full" />
           <h1 className="text-white font-bold uppercase text-lg">Jabed</h1>
         </div>
@@ -62,7 +62,9 @@ const Header: React.FC = () => {
       {/* ===================== Clock and Calendar Start ============================= */}
       <Dialog>
         <DialogTrigger asChild>
-          <div className={`flex gap-x-6 text-sm md:text-base`}>
+          <div
+            className={`w-auto md:w-full lg:w-auto flex justify-normal md:justify-center lg:justify-normal gap-x-6 text-sm md:text-base `}
+          >
             <button
               onClick={() => setIsClock(true)}
               className={`text-white font-mono hover:text-purple-200`}
@@ -195,7 +197,7 @@ const Header: React.FC = () => {
           </button>
         </li>
       </ul>
-      <button
+      {/* <button
         className={`flex lg:hidden text-white px-6`}
         onClick={() => dispatch(setDarkMood())}
       >
@@ -204,7 +206,7 @@ const Header: React.FC = () => {
         ) : (
           <RiMoonClearLine className=" hover:scale-125" />
         )}
-      </button>
+      </button> */}
       {/* <button
         className={`flex border-l-2 border-slate-100 text-white px-4`}
         onClick={() => dispatch(setDarkMood())}

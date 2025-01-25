@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`w-full flex justify-center py-4 bg-purple-950 text-sm md:text-base`}
+        className={`w-full flex justify-center pt-4 pb-20 lg:pb-4 bg-purple-950 text-sm md:text-base`}
       >
         <p>Copyright ©{year} All Rights Reserved.</p>
       </div>
