@@ -14,6 +14,8 @@ import { RiSettings5Fill } from "react-icons/ri";
 import { useSelector } from "react-redux";
 import HomePagePicture from "@/components/homePagePicture";
 import SkillsSlider from "@/components/skillsSlider";
+import { AboutDb } from "@/components/personalDetails";
+import aboutDB from "./database/AboutDB.json";
 export interface HomeDB {
   text: string;
   static_text: string;
@@ -30,9 +32,11 @@ export interface HomeDB {
 
 export default function Home() {
   const [homeData, setHomeData] = useState<HomeDB | null>(null);
+  const [aboutData, setAboutData] = useState<AboutDb | null>(null);
   const isDarkmode = useSelector((state: any) => state.theme.darkmode);
   useEffect(() => {
     setHomeData(homeDB);
+    setAboutData(aboutDB);
   }, []);
   return (
     <div
@@ -80,11 +84,18 @@ export default function Home() {
           >
             {homeData?.home_description}
           </p>
-          <button
+          {/* <button
             className={`w-full md:w-[50%] bg-purple-700 hover:bg-purple-800 hover:scale-x-95 text-white shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
           >
             Hire me
-          </button>
+          </button> */}
+          <a
+            href={`mailto:${aboutData?.email}`}
+            target="_blank"
+            className={`w-full md:w-[50%] bg-violet-700 hover:bg-violet-800 hover:scale-x-95 text-white text-center shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
+          >
+            Hire Me
+          </a>
           <ul className={`flex gap-x-3 mt-6`}>
             <li className={`flex h-full`}>
               <a

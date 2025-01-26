@@ -184,7 +184,7 @@ const PersonalDetails = () => {
 
                 {isCalendar ? (
                   <div
-                    className={`w-[80%] md:w-full flex flex-col items-center justify-center`}
+                    className={`w-[88%] md:w-full flex flex-col items-center justify-center`}
                   >
                     <Calendar
                       value={"08/10/2000"}
