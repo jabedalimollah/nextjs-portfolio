@@ -64,7 +64,7 @@ const SkillsSection = () => {
           <div
             className={`w-full border  p-6 rounded-md ${
               isDarkmode
-                ? "bg-slate-900 border-purple-800"
+                ? "bg-slate-950 border-purple-800"
                 : "bg-white border-purple-400"
             } `}
           >
@@ -97,7 +97,7 @@ const SkillsSection = () => {
           <div
             className={`w-full border  p-6 rounded-md ${
               isDarkmode
-                ? "bg-slate-900 border-purple-800"
+                ? "bg-slate-950 border-purple-800"
                 : "bg-white border-purple-400"
             } `}
           >
@@ -129,7 +129,7 @@ const SkillsSection = () => {
           <div
             className={`w-full border  p-6 rounded-md ${
               isDarkmode
-                ? "bg-slate-900 border-purple-800"
+                ? "bg-slate-950 border-purple-800"
                 : "bg-white border-purple-400"
             } `}
           >

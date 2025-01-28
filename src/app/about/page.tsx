@@ -17,7 +17,7 @@ const about = () => {
   return (
     <div
       className={`w-full flex flex-col items-center ${
-        isDarkmode ? "bg-slate-800" : "bg-purple-50"
+        isDarkmode ? "bg-slate-900" : "bg-purple-50"
       }`}
     >
       {/* ==================== Personal Details Section ================ */}

@@ -72,7 +72,7 @@ const EducationSection = () => {
               <div
                 className={`timeline-end timeline-box w-full my-4 rounded-md md:rounded-xl hover:scale-x-95 transition-all shadow-md cursor-pointer ${
                   isDarkmode
-                    ? "bg-slate-900 border-none border-black"
+                    ? "bg-slate-950 border-none border-black"
                     : "bg-white"
                 } `}
               >

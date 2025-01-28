@@ -33,7 +33,7 @@ const ContactForm = () => {
   return (
     <div
       className={`w-full lg:w-[48%] p-3 md:p-6 ${
-        isDarkmode ? "bg-slate-900" : "bg-purple-100"
+        isDarkmode ? "bg-slate-950" : "bg-purple-100"
       } rounded-s-md`}
     >
       {/* <h2 className={``}>Contact Us</h2> */}

@@ -92,7 +92,7 @@ const WeatherApp = () => {
     <div
       className={`w-full lg:w-[50%] flex flex-col items-center shadow-2xl ${
         isDarkmode
-          ? "shadow-slate-900 bg-slate-900"
+          ? "shadow-slate-900 bg-slate-950"
           : "shadow-slate-200 bg-white"
       }  pb-6 rounded-md`}
     >

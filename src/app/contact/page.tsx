@@ -43,7 +43,7 @@ const page: React.FC = () => {
   return (
     <div
       className={`w-full flex flex-col gap-y-4 items-center ${
-        isDarkmode ? "bg-slate-800" : "bg-purple-50 "
+        isDarkmode ? "bg-slate-900" : "bg-purple-50 "
       } `}
     >
       {/* ====================== Contact Me Section ================== */}
@@ -81,7 +81,7 @@ const page: React.FC = () => {
           <div
             className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
-                ? "bg-slate-900 hover:bg-slate-950"
+                ? "bg-slate-950 hover:bg-black"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
@@ -113,7 +113,7 @@ const page: React.FC = () => {
           <div
             className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
-                ? "bg-slate-900 hover:bg-slate-950"
+                ? "bg-slate-950 hover:bg-black"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
@@ -146,7 +146,7 @@ const page: React.FC = () => {
           <div
             className={`w-full lg:w-[30%] flex items-center gap-x-3 shadow-md py-2 px-2 ${
               isDarkmode
-                ? "bg-slate-900 hover:bg-slate-950"
+                ? "bg-slate-950 hover:bg-black"
                 : "hover:bg-purple-100 bg-white border"
             }  rounded-md`}
           >
@@ -207,14 +207,14 @@ const page: React.FC = () => {
           <a
             href={socialMedia?.instagram}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md text-pink-600 border-pink-600 hover:bg-pink-600 hover:text-white rounded-md  `}
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md text-pink-600 border-pink-600 hover:bg-pink-600 hover:text-white rounded-md  `}
           >
             <AiFillInstagram /> Instagram
           </a>
           <a
             href={socialMedia?.facebook}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md ${
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md ${
               isDarkmode
                 ? "text-blue-500 border-blue-600"
                 : "text-blue-500 border-blue-600"
@@ -225,7 +225,7 @@ const page: React.FC = () => {
           <a
             href={socialMedia?.github}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md ${
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md ${
               isDarkmode
                 ? "text-slate-300 border-slate-300 hover:border-slate-600 hover:bg-slate-600"
                 : "text-slate-600 border-slate-600 hover:bg-slate-600"
@@ -236,7 +236,7 @@ const page: React.FC = () => {
           <a
             href={socialMedia?.linkedin}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md ${
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md ${
               isDarkmode
                 ? "text-blue-500 border-blue-500 hover:bg-blue-500"
                 : "text-blue-600 border-blue-600 hover:bg-blue-600"
@@ -247,14 +247,14 @@ const page: React.FC = () => {
           <a
             href={socialMedia?.youtube}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md text-red-600 border-red-600 hover:bg-red-600 hover:text-white rounded-md  `}
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md text-red-600 border-red-600 hover:bg-red-600 hover:text-white rounded-md  `}
           >
             <FaYoutube /> Youtube
           </a>
           <a
             href={socialMedia?.x}
             target="_blank"
-            className={`py-2 px-3 flex items-center text-lg font-semibold gap-x-1 border-2 shadow-md ${
+            className={`py-2 px-3 flex items-center text-lg font-normal md:font-semibold gap-x-1 border md:border-2 shadow-md ${
               isDarkmode
                 ? "text-slate-300 border-slate-300 hover:border-slate-600"
                 : "text-slate-600 border-slate-600"
@@ -292,7 +292,7 @@ const page: React.FC = () => {
         <div className={`w-full flex justify-center items-center`}>
           <div
             className={`w-full md:w-[80%] my-4 flex flex-col lg:flex-row justify-between items-center  shadow-md ${
-              isDarkmode ? "bg-slate-900" : "bg-white"
+              isDarkmode ? "bg-slate-950" : "bg-white"
             } rounded-md`}
           >
             {" "}

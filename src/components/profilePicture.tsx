@@ -139,7 +139,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
             href={socialMedia?.facebook}
             target="_blank"
             className={`absolute -top-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-              isDarkmode ? "bg-purple-700" : "bg-white"
+              isDarkmode ? "bg-purple-100 text-black" : "bg-white"
             } p-2 rounded-full `}
           >
             <FaFacebookF className={`text-sm`} />
@@ -148,7 +148,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
             href={socialMedia?.youtube}
             target="_blank"
             className={`absolute -bottom-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-              isDarkmode ? "bg-purple-700" : "bg-white"
+              isDarkmode ? "bg-purple-100 text-black" : "bg-white"
             } p-2 rounded-full `}
           >
             <FaYoutube className={`text-sm`} />
@@ -162,7 +162,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
           href={socialMedia?.github}
           target="_blank"
           className={`absolute -top-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-            isDarkmode ? "bg-purple-700" : "bg-white"
+            isDarkmode ? "bg-purple-100 text-black" : "bg-white"
           } p-2 rounded-full `}
         >
           <FaGithub className={`text-sm`} />
@@ -171,7 +171,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
           href={socialMedia?.linkedin}
           target="_blank"
           className={`absolute -bottom-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-            isDarkmode ? "bg-purple-700" : "bg-white"
+            isDarkmode ? "bg-purple-100 text-black" : "bg-white"
           } p-2 rounded-full `}
         >
           <FaLinkedin className={`text-sm`} />
@@ -180,7 +180,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
           href={socialMedia?.x}
           target="_blank"
           className={`absolute -left-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-            isDarkmode ? "bg-purple-700" : "bg-white"
+            isDarkmode ? "bg-purple-100 text-black" : "bg-white"
           } p-2 rounded-full `}
         >
           <FaXTwitter className={`text-sm`} />
@@ -189,7 +189,7 @@ const ProfilePicture: React.FC<Profile_picture> = ({ profile_picture }) => {
           href={socialMedia?.instagram}
           target="_blank"
           className={`absolute -right-4 border border-dotted shadow-md border-purple-800 hover:bg-purple-800 hover:text-white ${
-            isDarkmode ? "bg-purple-700" : "bg-white"
+            isDarkmode ? "bg-purple-100 text-black" : "bg-white"
           } p-2 rounded-full `}
         >
           <AiFillInstagram className={`text-sm`} />

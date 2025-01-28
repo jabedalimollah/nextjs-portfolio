@@ -19,7 +19,7 @@ const LocationAndWeatherApp = () => {
         <div
           className={`w-full lg:w-[50%] overflow-hidden px-6 pb-6 borders shadow-xl ${
             isDarkmode
-              ? "shadow-slate-800 border-purple-500 bg-slate-900"
+              ? "shadow-slate-900 border-purple-500 bg-slate-950"
               : "shadow-slate-200 border-purple-600 bg-white"
           }   rounded-md`}
         >

@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer
       className={`w-full text-white pt-6 ${
-        isDarkmode ? "bg-slate-800" : "bg-purple-50"
+        isDarkmode ? "bg-slate-900" : "bg-purple-50"
       } `}
     >
       <div

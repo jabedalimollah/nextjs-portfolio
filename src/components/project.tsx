@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { IoLogoYoutube } from "react-icons/io";
 import { MdWork } from "react-icons/md";
 import { useSelector } from "react-redux";
 
@@ -27,7 +28,7 @@ const project: React.FC<ProjectProps> = ({ data, grid }) => {
       // key={data?.id}
       className={` border overflow-hidden ${
         isDarkmode
-          ? "shadow-lg border-purple-900 hover:bg-slate-950 bg-slate-900 shadow-slate-900"
+          ? "shadow-lg border-violet-900 md:border-purple-900 hover:bg-slate-950 bg-slate-900 shadow-slate-900"
           : "shadow-xl border-purple-200 hover:bg-slate-100 bg-white"
       } hover:shadow-none p-4  rounded-xl`}
     >
@@ -48,7 +49,7 @@ const project: React.FC<ProjectProps> = ({ data, grid }) => {
           <h2
             className={`font-bold flex items-center gap-x-1 ${
               grid == 2 ? "text-lg" : "text-xl"
-            } md:text-xl text-purple-600 my-2 hover:underline`}
+            } md:text-xl text-violet-500 md:text-purple-600 my-2 hover:underline`}
           >
             {/* <MdWork className={`text-purple-400`} /> */}
             {/* 💫 */}
@@ -68,7 +69,7 @@ const project: React.FC<ProjectProps> = ({ data, grid }) => {
       <div className="w-full flex flex-col md:flex-row justify-between gap-y-2 mt-0 md:mt-2">
         <Link
           href={`/projects/${data?.id}`}
-          className={`inline-block md:hidden text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
+          className={`inline-block md:hidden text-violet-500 md:text-purple-600 hover:text-purple-800 py-1 hover:underline hover:font-semibold`}
         >
           More Details...
         </Link>
@@ -86,14 +87,25 @@ const project: React.FC<ProjectProps> = ({ data, grid }) => {
         >
           More Details
         </Link>
-        <a
-          href={data?.live_link}
-          target="_blank"
-          className={`bg-purple-700 hover:bg-purple-800 text-white px-3 py-2 lg:py-1 rounded flex items-center gap-x-1 `}
-        >
-          <FiExternalLink />
-          Live Link
-        </a>
+        {data?.live_link ? (
+          <a
+            href={data?.live_link}
+            target="_blank"
+            className={`bg-violet-700 md:bg-purple-700 hover:bg-violet-800 lg:hover:bg-purple-800 text-white px-3 py-2 lg:py-1 rounded flex items-center gap-x-1 `}
+          >
+            <FiExternalLink />
+            Live Link
+          </a>
+        ) : (
+          <a
+            href={data?.video_link}
+            target="_blank"
+            className={`bg-violet-700 md:bg-purple-700 hover:bg-violet-800 lg:hover:bg-purple-800 text-white px-3 py-2 lg:py-1 rounded flex items-center gap-x-1 `}
+          >
+            <IoLogoYoutube />
+            Video
+          </a>
+        )}
       </div>
     </div>
   );

@@ -25,11 +25,11 @@ const BottomMenu = () => {
         className={`w-full flex justify-around items-center border border-violet-100 text-white bg-violet-600  py-3 text-xl rounded-t-3xl relative`}
       >
         <li className="">
-          <Link href={"/"} className={`hover:text-violet-950`}>
+          <Link href={"/"} className={`hover:text-violet-200`}>
             <AiFillHome />
           </Link>
         </li>
-        <li className={`hover:text-violet-950`}>
+        <li className={`hover:text-violet-200`}>
           <Link href={"/about"} className={` `}>
             <FaUserAlt />
           </Link>
@@ -43,12 +43,12 @@ const BottomMenu = () => {
             {isDarkmode ? <RiSunFill /> : <RiMoonClearFill />}
           </button>
         </li>
-        <li className={`hover:text-violet-950`}>
+        <li className={`hover:text-violet-200`}>
           <Link href={"/projects"} className={` `}>
             <BsBriefcaseFill />
           </Link>
         </li>
-        <li className={`hover:text-violet-950`}>
+        <li className={`hover:text-violet-200`}>
           <Link href={"/contact"} className={` `}>
             <RiContactsBook3Fill />
           </Link>

@@ -93,13 +93,13 @@ const CalendarAndAgeCalculator = () => {
     <section className={`w-full flex justify-center my-6`}>
       <div
         className={`w-[80%] flex flex-col md:flex-row rounded-md shadow-2xl ${
-          isDarkmode ? "shadow-slate-900" : "shadow-slate-300"
+          isDarkmode ? "shadow-slate-950" : "shadow-slate-300"
         } `}
       >
         {/* ============ Date =============== */}
         <div
           className={`w-full md:w-[50%] flex flex-col items-center justify-center text-purple-500 ${
-            isDarkmode ? "bg-slate-900" : "bg-white"
+            isDarkmode ? "bg-slate-950" : "bg-white"
           }  p-6`}
         >
           <h2 className={`flex gap-x-2 items-center text-2xl font-semibold`}>

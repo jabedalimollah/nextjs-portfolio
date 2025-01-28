@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div
       className={`w-full flex flex-col items-center ${
-        isDarkmode ? "bg-slate-800" : "bg-white"
+        isDarkmode ? "bg-slate-900 lg:bg-slate-900" : "bg-white"
       }`}
     >
       <section
@@ -65,7 +65,7 @@ export default function Home() {
             {homeData?.static_text}
             <span
               className={`${
-                isDarkmode ? "text-purple-600" : " text-purple-700"
+                isDarkmode ? "text-violet-500" : " text-violet-700"
               }`}
             >
               <Typewriter
@@ -103,7 +103,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -116,7 +116,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -129,7 +129,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -142,7 +142,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -155,7 +155,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -168,7 +168,7 @@ export default function Home() {
                 target="_blank"
                 className={`${
                   isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-900"
+                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
                     : "bg-white shadow-lg shadow-slate-400 text-purple-700"
                 }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
               >
@@ -188,7 +188,7 @@ export default function Home() {
       {/* =============================== What I Do =============================== */}
       <section
         className={`w-[100%] flex flex-col gap-y-8 items-center py-8 ${
-          isDarkmode ? "bg-slate-900" : "bg-gray-100"
+          isDarkmode ? "bg-slate-950 lg:bg-slate-950" : "bg-gray-100"
         }`}
       >
         <h2
@@ -208,7 +208,7 @@ export default function Home() {
         >
           <div
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
-              isDarkmode ? "bg-slate-800" : "bg-white"
+              isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >
             <span
@@ -216,7 +216,13 @@ export default function Home() {
             >
               <PiMonitorBold />
             </span>
-            <h3 className={`uppercase text-lg text-purple-700`}>Design</h3>
+            <h3
+              className={`uppercase text-lg ${
+                isDarkmode ? "text-violet-400" : "text-violet-600"
+              } `}
+            >
+              Design
+            </h3>
             <p
               className={`w-full text-center font-thin font-serif text-slate-500`}
             >
@@ -229,7 +235,7 @@ export default function Home() {
           </div>
           <div
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
-              isDarkmode ? "bg-slate-800" : "bg-white"
+              isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >
             <span
@@ -237,7 +243,13 @@ export default function Home() {
             >
               <FaCode />
             </span>
-            <h3 className={`uppercase text-lg text-purple-700`}>Development</h3>
+            <h3
+              className={`uppercase text-lg ${
+                isDarkmode ? "text-violet-400" : "text-violet-600"
+              } `}
+            >
+              Development
+            </h3>
             <p
               className={`w-full text-center font-thin font-serif text-slate-500`}
             >
@@ -250,7 +262,7 @@ export default function Home() {
           </div>
           <div
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
-              isDarkmode ? "bg-slate-800" : "bg-white"
+              isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
           >
             <span
@@ -258,7 +270,13 @@ export default function Home() {
             >
               <RiSettings5Fill />
             </span>
-            <h3 className={`uppercase text-lg text-purple-700`}>Improvement</h3>
+            <h3
+              className={`uppercase text-lg ${
+                isDarkmode ? "text-violet-400" : "text-violet-600"
+              } `}
+            >
+              Improvement
+            </h3>
             <p
               className={`w-full text-center font-thin font-serif text-slate-500`}
             >

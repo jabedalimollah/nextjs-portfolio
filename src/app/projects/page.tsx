@@ -145,13 +145,15 @@ const Page: React.FC = () => {
   return (
     <div
       className={`w-full ${
-        isDarkmode ? "bg-slate-800 text-purple-200" : "bg-purple-50 text-black"
+        isDarkmode
+          ? "bg-slate-900 lg:bg-slate-800  text-purple-200"
+          : "bg-purple-50 text-black"
       }`}
     >
       {/*===================== Project Title Section ================ */}
       <section
         className={`w-full flex flex-col items-center ${
-          isDarkmode ? "bg-slate-950" : "bg-purple-200"
+          isDarkmode ? "bg-black lg:bg-slate-950 " : "bg-purple-200"
         }`}
       >
         <p className="mt-4">Some of my recent work</p>
@@ -178,7 +180,7 @@ const Page: React.FC = () => {
       {/* ==================== Search, Grid and Sorting Sectiion =================- */}
       <section
         className={`w-full py-4 ${
-          isDarkmode ? "bg-slate-900" : "bg-purple-100"
+          isDarkmode ? "bg-slate-950 lg:bg-slate-900 " : "bg-purple-100"
         }`}
       >
         <div className="w-full flex justify-center mb-4">
@@ -337,12 +339,12 @@ const Page: React.FC = () => {
             <button
               key={index}
               onClick={() => handleSkillFilter(item)}
-              className={`border-2 ${
+              className={`border md:border-2 ${
                 isDarkmode
-                  ? `border-purple-500 lg:hover:bg-purple-500 lg:hover:text-white  ${
+                  ? `border-violet-500 md:border-purple-500 lg:hover:bg-purple-500 lg:hover:text-white  ${
                       skill == item
                         ? "bg-purple-500 text-white"
-                        : "bg-transparent text-purple-700"
+                        : "bg-transparent text-violet-500 lg:text-purple-700"
                     } text-purple-500s shadow-black`
                   : `border-purple-700 bg-whites ${
                       skill == item
