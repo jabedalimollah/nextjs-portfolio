@@ -4,8 +4,7 @@ import homeDB from "./database/HomeDB.json";
 import Typewriter from "typewriter-effect";
 // import Robot from "../../public/images/animation_picture/home.json";
 // import AnimatedPicture from "@/components/animatedPicture";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { AiFillInstagram } from "react-icons/ai";
 import { FaCode, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -38,10 +37,6 @@ export default function Home() {
   useEffect(() => {
     setHomeData(homeDB);
     setAboutData(aboutDB);
-    AOS.init({
-      duration: 800,
-      once: false,
-    });
   }, []);
   return (
     <div
@@ -55,7 +50,6 @@ export default function Home() {
         }`}
       >
         <div
-          data-aos="fade-right"
           className={`w-full lg:w-[50%] h-full lg:h-[90%] flex flex-col justify-center gap-y-2 pt-10 lg:pt-0`}
         >
           <h2
@@ -184,7 +178,6 @@ export default function Home() {
           </ul>
         </div>
         <div
-          data-aos="fade-left"
           className={`w-full lg:w-[50%] h-[100%] flex justify-center items-center`}
         >
           {/* <AnimatedPicture pathString={Robot} /> */}
@@ -214,7 +207,6 @@ export default function Home() {
           className={`w-full flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-evenly gap-y-5 lg:gap-y-0`}
         >
           <div
-            data-aos="flip-left"
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
@@ -242,7 +234,6 @@ export default function Home() {
             </p>
           </div>
           <div
-            data-aos="flip-left"
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
@@ -270,7 +261,6 @@ export default function Home() {
             </p>
           </div>
           <div
-            data-aos="flip-left"
             className={`w-[80%] lg:w-[25%] flex flex-col gap-y-4 p-6 items-center borders border-purple-700 ${
               isDarkmode ? "bg-slate-900" : "bg-white"
             }  shadow-slate-600 rounded-md shadow-2xls hover:scale-105 transition duration-700 ease-in-out`}
