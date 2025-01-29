@@ -189,7 +189,7 @@ const Page: React.FC = () => {
                   <a
                     href={projectDetails?.github_link}
                     target="_blank"
-                    className={`flex items-center gap-x-1 py-1 px-3 border-2 font-semibold ${
+                    className={`flex items-center gap-x-1 py-1 px-3 border md:border-2 font-semibold ${
                       isDarkmode
                         ? "border-slate-300 text-slate-300 hover:border-slate-800   hover:bg-slate-100 hover:text-black"
                         : "border-slate-800  text-slate-800 hover:bg-slate-800 hover:text-white"
@@ -202,7 +202,7 @@ const Page: React.FC = () => {
                   <a
                     href={projectDetails?.live_link}
                     target="_blank"
-                    className={`flex items-center gap-x-1 py-1 px-3 border-2 font-semibold ${
+                    className={`flex items-center gap-x-1 py-1 px-3 border md:border-2 font-semibold ${
                       isDarkmode
                         ? "border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"
                         : "border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white"
@@ -215,7 +215,7 @@ const Page: React.FC = () => {
                   <a
                     href={projectDetails?.video_link}
                     target="_blank"
-                    className={`flex items-center gap-x-1 py-1 px-3 border-2 font-semibold ${
+                    className={`flex items-center gap-x-1 py-1 px-3 border md:border-2 font-semibold ${
                       isDarkmode
                         ? "border-red-600  text-red-600 hover:bg-red-700 hover:text-white"
                         : " border-red-700  text-red-700 hover:bg-red-700 hover:text-white"

@@ -295,3 +295,163 @@ body {
   background-color: #0f0f10;
   height: 85%;
 }
+
+.box_gradient {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: linear-gradient(#dbdcff 4px, transparent 4px),
+    linear-gradient(to right, #dbdcff 4px, #e5e5f7 4px);
+  background-size: 80px 80px;
+  /* background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #dbdcff, #e5e5f7),
+    repeating-radial-gradient(
+      circle at center center,
+      #dbdcff,
+      #dbdcff,
+      40px,
+      transparent 80px,
+      transparent 40px
+    );
+  background-blend-mode: multiply; */
+}
+.box_gradient_dark {
+  background-color: #181822;
+  opacity: 1;
+  background-image: linear-gradient(rgb(15 23 42) 4px, transparent 4px),
+    linear-gradient(to right, rgb(15 23 42) 4px, rgb(19, 19, 29) 4px);
+  background-size: 80px 80px;
+  /* background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1)); */
+  /* background-color: #1d1d38;
+  opacity: 1;
+  background-image: linear-gradient(#444cf7 4px, transparent 4px),
+    linear-gradient(to right, #444cf7 4px, #1d1d38 4px);
+  background-size: 80px 80px; */
+  animation-name: borderChange;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes borderChange {
+  from {
+    background-color: #181822;
+    opacity: 1;
+    background-image: linear-gradient(rgb(15 23 42) 4px, transparent 4px),
+      linear-gradient(to right, rgb(15 23 42) 4px, rgb(19, 19, 29) 4px);
+    background-size: 80px 80px;
+  }
+  to {
+    background-color: #181822;
+    opacity: 1;
+    background-image: linear-gradient(rgb(35, 15, 42) 4px, transparent 4px),
+      linear-gradient(to right, rgb(33, 15, 42) 4px, rgb(19, 19, 29) 4px);
+    background-size: 80px 80px;
+  }
+}
+
+.plus_gradient {
+  background-color: #ffffff;
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#dfe6ff 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #dfe6ff 0.8px, #ffffff 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+
+  /* background-color: #f3f6ff;
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #fefefe 25%,
+      transparent 25%,
+      transparent 75%,
+      #fefefe 75%,
+      #fefefe
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #fefefe 25%,
+      #f3f6ff 25%,
+      #f3f6ff 75%,
+      #fefefe 75%,
+      #fefefe
+    );
+  background-position: 0 0, 4px 4px;
+  background-size: 8px 8px; */
+
+  /* background-color: #f3f6ff;
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #fefefe 25%,
+      transparent 25%,
+      transparent 75%,
+      #fefefe 75%,
+      #fefefe
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #fefefe 25%,
+      #f3f6ff 25%,
+      #f3f6ff 75%,
+      #fefefe 75%,
+      #fefefe
+    );
+  background-position: 0 0, 40px 40px;
+  background-size: 80px 80px; */
+
+  /* background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(244, 244, 244, 1) 16%,
+    rgba(255, 255, 255, 1) 34%,
+    rgba(240, 240, 240, 1) 35%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(245, 245, 243, 1) 54%,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(240, 240, 240, 1) 78%,
+    rgba(255, 255, 255, 1) 80%
+  ); */
+}
+.plus_gradient_dark {
+  background-color: #3a3a3a;
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      rgb(15, 23, 42) 20%,
+      rgb(15, 23, 42) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        rgb(15, 23, 42) 20%,
+        rgb(15, 23, 42) 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(rgb(28, 37, 60) 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, rgb(28, 37, 60) 0.8px, rgb(15, 23, 42) 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+}

@@ -47,6 +47,7 @@ const SkillsSection = () => {
           {showHide ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
           {/* </button> */}
         </h1>
+
         <div
           className={`slide-line ${
             isDarkmode ? "slide-line-dark" : "slide-line-light"
@@ -69,7 +70,9 @@ const SkillsSection = () => {
             } `}
           >
             <h1
-              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
+              className={`text-xl flex gap-x-2 items-center ${
+                isDarkmode ? "text-violet-500" : "text-violet-700"
+              }  font-semibold my-2`}
             >
               <FaCode className={``} />
               Frontend
@@ -102,7 +105,9 @@ const SkillsSection = () => {
             } `}
           >
             <h1
-              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
+              className={`text-xl flex gap-x-2 items-center ${
+                isDarkmode ? "text-violet-500" : "text-violet-700"
+              }  font-semibold my-2`}
             >
               <PiBracketsCurlyBold /> Backend
             </h1>
@@ -134,7 +139,9 @@ const SkillsSection = () => {
             } `}
           >
             <h1
-              className={`text-xl flex gap-x-2 items-center text-purple-700 font-semibold my-2`}
+              className={`text-xl flex gap-x-2 items-center ${
+                isDarkmode ? "text-violet-500" : "text-violet-700"
+              }  font-semibold my-2`}
             >
               <RiToolsFill /> Others
             </h1>

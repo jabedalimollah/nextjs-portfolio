@@ -41,148 +41,158 @@ export default function Home() {
   return (
     <div
       className={`w-full flex flex-col items-center ${
-        isDarkmode ? "bg-slate-900 lg:bg-slate-900" : "bg-white"
+        isDarkmode ? "bg-slate-900 lg:bg-slate-900" : "bg-white "
       }`}
     >
       <section
-        className={`w-[80%] h-auto lg:h-[80vh] flex flex-col lg:flex-row ${
-          isDarkmode ? "text-gray-400" : "text-black"
-        }`}
+        className={`w-full h-auto lg:h-[100vh] flex flex-col items-center ${
+          isDarkmode ? "box_gradient_dark" : "box_gradient"
+        } `}
       >
-        <div
-          className={`w-full lg:w-[50%] h-full lg:h-[90%] flex flex-col justify-center gap-y-2 pt-10 lg:pt-0`}
+        <section
+          className={`w-[80%] h-auto lg:h-[80vh] flex flex-col lg:flex-row  ${
+            isDarkmode ? "text-gray-400" : "text-black"
+          }`}
         >
-          <h2
-            className={`text-3xl ${
-              isDarkmode ? "text-slate-400" : "text-slate-500"
-            } `}
+          <div
+            className={`w-full lg:w-[50%] h-full lg:h-[90%] flex flex-col justify-center gap-y-2 pt-10 lg:pt-0`}
           >
-            🙋‍♂️ {homeData?.text}
-          </h2>
-          <h1
-            className={`font-bold text-xl md:text-3xl flex gap-x-1 md:gap-x-3`}
-          >
-            {homeData?.static_text}
-            <span
-              className={`${
-                isDarkmode ? "text-violet-500" : " text-violet-700"
+            <h2
+              className={`text-3xl ${
+                isDarkmode ? "text-slate-400" : "text-slate-500"
+              } `}
+            >
+              🙋‍♂️ {homeData?.text}
+            </h2>
+            <h1
+              className={`font-bold text-xl md:text-3xl flex gap-x-1 md:gap-x-3`}
+            >
+              {homeData?.static_text}
+              <span
+                className={`${
+                  isDarkmode ? "text-violet-500" : " text-violet-700"
+                }`}
+              >
+                <Typewriter
+                  options={{
+                    strings: homeData?.text_group,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />{" "}
+              </span>
+            </h1>
+            <p
+              className={`w-full md:w-[80%] my-2 ${
+                isDarkmode
+                  ? "text-slate-300"
+                  : "text-black bg-violet-100s p-2 rounded-md"
               }`}
             >
-              <Typewriter
-                options={{
-                  strings: homeData?.text_group,
-                  autoStart: true,
-                  loop: true,
-                }}
-              />{" "}
-            </span>
-          </h1>
-          <p
-            className={`w-full md:w-[80%] my-2 ${
-              isDarkmode ? "text-slate-300" : "text-black"
-            }`}
-          >
-            {homeData?.home_description}
-          </p>
-          {/* <button
+              <span className={`text-2xl text-violet-500`}>❛❛</span>{" "}
+              {homeData?.home_description}{" "}
+              <span className={`text-2xl text-violet-500`}> ❜❜</span>
+            </p>
+            {/* <button
             className={`w-full md:w-[50%] bg-purple-700 hover:bg-purple-800 hover:scale-x-95 text-white shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
           >
             Hire me
           </button> */}
-          <a
-            href={`mailto:${aboutData?.email}`}
-            target="_blank"
-            className={`w-full md:w-[50%] bg-violet-700 hover:bg-violet-800 hover:scale-x-95 text-white text-center shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
+            <a
+              href={`mailto:${aboutData?.email}`}
+              target="_blank"
+              className={`w-full md:w-[50%] bg-violet-700 hover:bg-violet-800 hover:scale-x-95 text-white text-center shadow-gray-800 shadow-2xls transition-all text-lg py-1 font-semibold rounded-md`}
+            >
+              Hire Me
+            </a>
+            <ul className={`flex gap-x-3 mt-6`}>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.instagram}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.facebook}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <FaFacebookF />
+                </a>
+              </li>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.github}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <FaGithub />
+                </a>
+              </li>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.linkedin}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <FaLinkedin />
+                </a>
+              </li>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.youtube}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <IoLogoYoutube />
+                </a>
+              </li>
+              <li className={`flex h-full`}>
+                <a
+                  href={homeData?.x}
+                  target="_blank"
+                  className={`${
+                    isDarkmode
+                      ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
+                      : "bg-white shadow-lg shadow-slate-400 text-purple-700"
+                  }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
+                >
+                  <FaXTwitter />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className={`w-full lg:w-[50%] h-[100%] flex justify-center items-center`}
           >
-            Hire Me
-          </a>
-          <ul className={`flex gap-x-3 mt-6`}>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.instagram}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.facebook}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <FaFacebookF />
-              </a>
-            </li>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.github}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <FaGithub />
-              </a>
-            </li>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.linkedin}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <FaLinkedin />
-              </a>
-            </li>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.youtube}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <IoLogoYoutube />
-              </a>
-            </li>
-            <li className={`flex h-full`}>
-              <a
-                href={homeData?.x}
-                target="_blank"
-                className={`${
-                  isDarkmode
-                    ? "bg-gray-700 text-purple-200 shadow-md shadow-gray-950"
-                    : "bg-white shadow-lg shadow-slate-400 text-purple-700"
-                }  hover:bg-purple-600  hover:text-white text-xl   p-2 rounded-full`}
-              >
-                <FaXTwitter />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div
-          className={`w-full lg:w-[50%] h-[100%] flex justify-center items-center`}
-        >
-          {/* <AnimatedPicture pathString={Robot} /> */}
-          <HomePagePicture />
-        </div>
+            {/* <AnimatedPicture pathString={Robot} /> */}
+            <HomePagePicture />
+          </div>
+        </section>
       </section>
 
       {/* =============================== What I Do =============================== */}
