@@ -84,9 +84,7 @@ export default function Home() {
             </h1>
             <p
               className={`w-full md:w-[80%] my-2 ${
-                isDarkmode
-                  ? "text-slate-300"
-                  : "text-black bg-violet-100s p-2 rounded-md"
+                isDarkmode ? "text-slate-300" : "text-black bg-violet-100s"
               }`}
             >
               <span className={`text-2xl text-violet-500`}>❛❛</span>{" "}
