@@ -24,6 +24,31 @@
   font-family: "Aestera";
   src: url("/fonts/Aestera.ttf");
 }
+@layer utilities {
+  /* Scrollbar width */
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Scrollbar track */
+  .scrollbar::-webkit-scrollbar-track {
+    background: #1e293b; /* Dark background */
+    border-radius: 10px;
+  }
+
+  /* Scrollbar handle */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #3b82f6 !important; /* Blue color */
+    border-radius: 10px;
+  }
+
+  /* Scrollbar handle on hover */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2563eb; /* Darker blue */
+  }
+}
 body {
   box-sizing: border-box;
 }

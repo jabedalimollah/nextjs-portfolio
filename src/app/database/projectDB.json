@@ -82,6 +82,47 @@
   },
   {
     "id": 4,
+    "project_name": "ReactJS - Portfolio",
+    "project_image": [
+      "/images/projects/reactjs-portfolio/reactjs_portfolio1.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio2.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio3.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio4.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio5.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio6.png",
+      "/images/projects/reactjs-portfolio/reactjs_portfolio7.png"
+    ],
+    "live_link": "https://jabedalimollah.netlify.app/",
+    "github_link": "https://github.com/jabedalimollah/portfolio",
+    "video_link": "",
+    "project_info": "A personal portfolio website built with React JS to showcase your skills, education, projects, contact, and personal info.",
+    "features": [
+      "Home : Introduction & bio",
+      "About : Personal details, skills, education",
+      "Projects : Showcase work with GitHub/live demo links",
+      "Contact : Form & social links"
+    ],
+    "tech_stack": {
+      "frontend": [
+        "React JS",
+        "Bootstrap",
+        "React Icons",
+        "Redux",
+        "React-Router-dom",
+        "Javascript",
+        "CSS3",
+        "tsparticles",
+        "react-slick",
+        "lottie-react",
+        "aos",
+        "typewriter-effect"
+      ],
+      "backend": [],
+      "database": []
+    }
+  },
+  {
+    "id": 5,
     "project_name": "Contact Book",
     "project_image": [
       "/images/projects/contact_book/contact_book3.png",
@@ -107,7 +148,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "project_name": "E-Store",
     "project_image": [
       "/images/projects/e-store/e-store1.png",
@@ -152,7 +193,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "project_name": "Students-website",
     "project_image": [
       "/images/projects/students-website/students-website5.png",
@@ -176,7 +217,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "project_name": "Notebook",
     "project_image": [
       "/images/projects/notebook/notebook1.png",
@@ -214,7 +255,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "project_name": "Chatit",
     "project_image": [
       "/images/projects/chatit/chatit1.png",
@@ -282,7 +323,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "project_name": "Aliet",
     "project_image": [
       "/images/projects/aliet/aliet3.png",

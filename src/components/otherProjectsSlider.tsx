@@ -45,7 +45,7 @@ const OtherProjectsSlider: React.FC<SelectedProjectName> = ({
                 <div
                   className={`p-3 rounded-md m-2 borders shadow-md ${
                     isDarkmode
-                      ? "bg-gray-900 border-purple-700 hover:bg-slate-950"
+                      ? "bg-gray-950 border-purple-700 hover:bg-slate-800"
                       : "bg-white border-purple-700 hover:bg-purple-100"
                   } `}
                 >

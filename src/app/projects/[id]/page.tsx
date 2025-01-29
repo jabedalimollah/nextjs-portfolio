@@ -32,14 +32,14 @@ const Page: React.FC = () => {
   return (
     <div
       className={`w-full pb-11 ${
-        isDarkmode ? "bg-slate-800 text-white" : "bg-purple-50 text-black"
+        isDarkmode ? "bg-slate-900 text-white" : "bg-violet-50 text-black"
       }`}
     >
       <div className={`w-full flex flex-col items-center`}>
         {/* Page {id} */}
         <h1
-          className={`flex flex-col items-center text-4xl border-b-4s border-purple-500 my-3 py-2 font-bold ${
-            isDarkmode ? "text-purple-500" : "text-purple-700"
+          className={`flex flex-col items-center text-2xl md:text-4xl border-b-4s border-violet-500 my-3 py-2 font-bold ${
+            isDarkmode ? "text-violet-500" : "text-violet-700"
           }`}
         >
           {projectDetails?.project_name}
@@ -56,8 +56,8 @@ const Page: React.FC = () => {
         </h1>
         {/* <div className={`w-[80%] flex`}>
           <h2
-            className={`text-2xl border-b-4s border-purple-500 my-3 py-2 font-bold ${
-              isDarkmode ? "text-purple-500" : "text-purple-700"
+            className={`text-2xl border-b-4s border-violet-500 my-3 py-2 font-bold ${
+              isDarkmode ? "text-violet-500" : "text-violet-700"
             }`}
           >
             {projectDetails?.project_name} Images
@@ -72,8 +72,8 @@ const Page: React.FC = () => {
         <div className={`w-full flex flex-col items-center`}>
           <section className={`w-[80%] flex flex-col items-start`}>
             <h2
-              className={` text-2xl border-b-4s border-purple-500 mt-5s py-2 font-bold ${
-                isDarkmode ? "text-purple-500" : "text-purple-700"
+              className={` text-xl md:text-2xl border-b-4s border-violet-500 mt-5s py-2 font-bold ${
+                isDarkmode ? "text-violet-500" : "text-violet-700"
               }`}
             >
               <span className={`flex items-center  gap-x-1 `}>
@@ -92,8 +92,8 @@ const Page: React.FC = () => {
             {projectDetails?.features?.length != 0 && (
               <div className={`w-full`}>
                 <h3
-                  className={`w-full text-xl border-b-2 border-purple-500 my-2 py-2 font-bold ${
-                    isDarkmode ? "text-purple-500" : "text-purple-700"
+                  className={`w-full  text-xl md:text-2xl border-b-2 border-violet-500 my-2 py-2 font-bold ${
+                    isDarkmode ? "text-violet-500" : "text-violet-700"
                   }`}
                 >
                   🚀 Features
@@ -111,8 +111,8 @@ const Page: React.FC = () => {
 
             <div className={`w-full`}>
               <h3
-                className={`w-full text-xl border-b-2 border-purple-500 my-4 py-2 font-bold ${
-                  isDarkmode ? "text-purple-500" : "text-purple-700"
+                className={`w-full  text-xl md:text-2xl border-b-2 border-violet-500 my-4 py-2 font-bold ${
+                  isDarkmode ? "text-violet-500" : "text-violet-700"
                 }`}
               >
                 🛠️ Technologies Used
@@ -127,7 +127,7 @@ const Page: React.FC = () => {
                         (skill, index) => (
                           <li
                             key={index}
-                            className={`px-2 py-1 text-white bg-purple-700 hover:bg-purple-800 rounded-md`}
+                            className={`px-2 py-1 text-white bg-violet-700 hover:bg-violet-800 rounded-md`}
                           >
                             {skill}
                           </li>
@@ -145,7 +145,7 @@ const Page: React.FC = () => {
                         (skill, index) => (
                           <li
                             key={index}
-                            className={`px-2 py-1 text-white bg-purple-700 hover:bg-purple-800 rounded-md`}
+                            className={`px-2 py-1 text-white bg-violet-700 hover:bg-violet-800 rounded-md`}
                           >
                             {skill}
                           </li>
@@ -163,7 +163,7 @@ const Page: React.FC = () => {
                         (skill, index) => (
                           <li
                             key={index}
-                            className={`px-2 py-1 text-white bg-purple-700 hover:bg-purple-800 rounded-md`}
+                            className={`px-2 py-1 text-white bg-violet-700 hover:bg-violet-800 rounded-md`}
                           >
                             {skill}
                           </li>
@@ -176,8 +176,8 @@ const Page: React.FC = () => {
             </div>
             <div className={`w-full`}>
               <h3
-                className={`w-full text-xl border-b-2 border-purple-500 my-4 py-2 font-bold ${
-                  isDarkmode ? "text-purple-500" : "text-purple-700"
+                className={`w-full  text-xl md:text-2xl border-b-2 border-violet-500 my-4 py-2 font-bold ${
+                  isDarkmode ? "text-violet-500" : "text-violet-700"
                 }`}
               >
                 🔗 Links
@@ -204,8 +204,8 @@ const Page: React.FC = () => {
                     target="_blank"
                     className={`flex items-center gap-x-1 py-1 px-3 border md:border-2 font-semibold ${
                       isDarkmode
-                        ? "border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"
-                        : "border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white"
+                        ? "border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white"
+                        : "border-violet-700 text-violet-700 hover:bg-violet-700 hover:text-white"
                     } rounded-md `}
                   >
                     <FaExternalLinkAlt /> Live Link
@@ -231,8 +231,8 @@ const Page: React.FC = () => {
             <div className={`w-[80%] flex flex-col items-center`}>
               <div className={`w-[100%] flex`}>
                 <h2
-                  className={`text-2xl border-b-4s border-purple-500 my-3 py-2 font-bold ${
-                    isDarkmode ? "text-purple-500" : "text-purple-700"
+                  className={`text-lg md:text-2xl border-b-4s border-violet-500 my-3 py-2 font-bold ${
+                    isDarkmode ? "text-violet-500" : "text-violet-700"
                   }`}
                 >
                   {/* 📷 */}
@@ -251,10 +251,10 @@ const Page: React.FC = () => {
               {projectDetails?.project_image.map((image, index) => (
                 <div
                   key={index}
-                  className={`w-[100%] flex justify-center borders border-purple-800 rounded-lg ${
+                  className={`w-[100%] flex justify-center borders border-violet-800 rounded-lg ${
                     isDarkmode
-                      ? "border-purple-200 bg-slate-700"
-                      : "border-purple-800 bg-white"
+                      ? "border-violet-200 bg-slate-700"
+                      : "border-violet-800 bg-white"
                   }  shadow-lg p-4  mb-6`}
                 >
                   <img
@@ -269,8 +269,8 @@ const Page: React.FC = () => {
         <div className={`w-full flex flex-col items-center`}>
           <div className={`w-[80%] flex justify-center`}>
             <h2
-              className={`flex flex-col items-center text-2xl border-b-4s border-purple-500 my-3 py-2 font-bold ${
-                isDarkmode ? "text-purple-500" : "text-purple-700"
+              className={`flex flex-col items-center text-2xl border-b-4s border-violet-500 my-3 py-2 font-bold ${
+                isDarkmode ? "text-violet-500" : "text-violet-700"
               }`}
             >
               {/* {projectDetails?.project_name} Images */}
