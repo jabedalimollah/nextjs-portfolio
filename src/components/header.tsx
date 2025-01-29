@@ -52,7 +52,7 @@ const Header: React.FC = () => {
   //   }, 1000);
   // }, []);
   return (
-    <header className="h-11 w-full flex justify-around  md:justify-between items-center bg-violet-700 sticky z-50 top-0 left-0">
+    <header className="h-11 w-full flex justify-around  md:justify-between items-center border-b-2 border-violet-900 bg-violet-700 sticky z-50 top-0 left-0">
       <Link href={"/"} className="h-[60%]">
         <div className="h-full ml-0 md:ml-4 lg:ml-4 flex gap-x-1">
           <img src={"/images/logo1-white.png"} alt="logo" className="h-full" />
