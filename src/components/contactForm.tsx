@@ -44,7 +44,12 @@ const ContactForm = () => {
       >
         I am here for you. How can I help?{" "}
       </p>
-      <form onSubmit={handleSubmit} className={`flex flex-col gap-y-3`}>
+      <form
+        // onSubmit={handleSubmit}
+        method="POST"
+        action={`${process.env.NEXT_PUBLIC_CONTACT_FORM}`}
+        className={`flex flex-col gap-y-3`}
+      >
         <div
           className={`w-full flex items-center gap-x-2 borders py-1 shadow-md ${
             isDarkmode
@@ -84,7 +89,7 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Your Phone Number"
-            required
+            // required
             className={`w-full outline-none bg-transparent border-none p-2`}
           />
         </div>
