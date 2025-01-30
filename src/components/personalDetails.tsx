@@ -198,7 +198,7 @@ const PersonalDetails = () => {
                       className={`w-[88%] md:w-full flex flex-col items-center justify-center`}
                     >
                       <Calendar
-                        value={"08/10/2000"}
+                        value={"10/08/2000"} //mm/dd/yyyy 08 October 2000
                         className={`text-black rounded-md`}
                       />
                       <button
